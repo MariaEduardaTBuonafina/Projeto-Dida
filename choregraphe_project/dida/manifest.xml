@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="dida-7df585" version="0.0.0" installOnlyAtStartup="false">
+<package installOnlyAtStartup="false" version="0.0.0" uuid="dida-7df585">
  <names>
   <name lang="en_US">Untitled</name>
  </names>
@@ -16,7 +16,6 @@
    <names>
     <name lang="en_US">olho</name>
    </names>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
  </contents>
