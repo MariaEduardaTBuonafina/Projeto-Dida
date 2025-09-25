@@ -557,7 +557,7 @@ Seu João, um homem de 60 anos, trabalhou a vida toda em diferentes profissões,
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
                                         <Diagram>
-                                          <Box name="escolha 1" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="71" y="30">
+                                          <Box name="Pergunta 1" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="71" y="30">
                                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                             <script language="4">
                                               <content>
@@ -700,9 +700,9 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion(1)):
+		if(p == self.typeConversion(0)):
 			self.output_1(p)
-		elif(p == self.typeConversion(2)):
+		elif(p == self.typeConversion(0)):
 			self.output_2(p)
 		else:
 			self.onDefault()
@@ -720,8 +720,8 @@ class MyClass(GeneratedClass):
                                             </script>
                                             <pluginContent>
                                               <keywords>
-                                                <keyword>1</keyword>
-                                                <keyword>2</keyword>
+                                                <keyword>0</keyword>
+                                                <keyword>0</keyword>
                                                 <keyword></keyword>
                                               </keywords>
                                             </pluginContent>
@@ -731,7 +731,7 @@ class MyClass(GeneratedClass):
                                             <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
                                             <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
                                           </Box>
-                                          <Box name="escolha 2" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="763" y="18">
+                                          <Box name="Pergunta 2 A" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="763" y="18">
                                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                             <script language="4">
                                               <content>
@@ -758,7 +758,7 @@ Com o passar do tempo, Seu João percebeu que queria avançar ainda mais nos est
                                             <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                                             <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                                           </Box>
-                                          <Box name="opção B" id="5" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="845" y="340">
+                                          <Box name="Opções 2 A" id="6" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1073" y="78">
                                             <bitmap>media/images/box/movement/move.png</bitmap>
                                             <script language="4">
                                               <content>
@@ -772,12 +772,136 @@ Com o passar do tempo, Seu João percebeu que queria avançar ainda mais nos est
                                             <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                                               <BehaviorLayer name="behavior_layer1">
                                                 <BehaviorKeyframe name="keyframe1" index="1">
-                                                  <Diagram />
+                                                  <Diagram>
+                                                    <Box name="Switch Case" id="1" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="98" y="182">
+                                                      <bitmap>media/images/box/interaction/choice.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion(0)):
+			self.output_1(p)
+		elif(p == self.typeConversion(0)):
+			self.output_2(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <keywords>
+                                                          <keyword>0</keyword>
+                                                          <keyword>0</keyword>
+                                                          <keyword></keyword>
+                                                        </keywords>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                                                      <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                                                      <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                                                      <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                                                    </Box>
+                                                    <Box name="Text Edit" id="2" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="474" y="8">
+                                                      <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Seu João decidiu continuar no EJA até concluir o ensino fundamental e médio. No começo enfrentou dificuldades, mas com dedicação e apoio dos professores conseguiu avançar. Ele passou a estudar em casa, ler livros e se comunicar melhor, além de despertar interesse por novas áreas como história e ciências.\n\nCom o tempo, tornou-se exemplo para colegas mais jovens e, após alguns anos, recebeu emocionado o diploma do ensino médio. A conquista trouxe orgulho, novas oportunidades e o desejo de seguir estudando em cursos técnicos ou até mesmo na faculdade.")]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <text>
+                                                          <![CDATA[Seu João decidiu continuar no EJA até concluir o ensino fundamental e médio. No começo enfrentou dificuldades, mas com dedicação e apoio dos professores conseguiu avançar. Ele passou a estudar em casa, ler livros e se comunicar melhor, além de despertar interesse por novas áreas como história e ciências.
+
+Com o tempo, tornou-se exemplo para colegas mais jovens e, após alguns anos, recebeu emocionado o diploma do ensino médio. A conquista trouxe orgulho, novas oportunidades e o desejo de seguir estudando em cursos técnicos ou até mesmo na faculdade.]]>
+                                                        </text>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                      <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                                    </Box>
+                                                    <Box name="Text Edit (1)" id="3" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="470" y="345">
+                                                      <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Seu João optou por investir em cursos rápidos e profissionalizantes, escolhendo o de eletricista, já que sempre teve habilidade com ferramentas. Durante o curso, aprendeu a parte teórica e prática, além de reforçar leitura, escrita e cálculos básicos, o que o ajudou a elaborar orçamentos e entender manuais de equipamentos. Fez novas amizades e se sentiu cada vez mais motivado a seguir em frente.\n\nAo concluir, recebeu o certificado e passou a oferecer seus serviços de forma autônoma. Aos poucos conquistou clientes, aumentou sua renda e passou a ser reconhecido pela comunidade. Essa experiência trouxe independência financeira, dignidade e o desejo de continuar estudando para expandir seus conhecimentos e, no futuro, abrir seu próprio negócio.")]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <text>
+                                                          <![CDATA[Seu João optou por investir em cursos rápidos e profissionalizantes, escolhendo o de eletricista, já que sempre teve habilidade com ferramentas. Durante o curso, aprendeu a parte teórica e prática, além de reforçar leitura, escrita e cálculos básicos, o que o ajudou a elaborar orçamentos e entender manuais de equipamentos. Fez novas amizades e se sentiu cada vez mais motivado a seguir em frente.
+
+Ao concluir, recebeu o certificado e passou a oferecer seus serviços de forma autônoma. Aos poucos conquistou clientes, aumentou sua renda e passou a ser reconhecido pela comunidade. Essa experiência trouxe independência financeira, dignidade e o desejo de continuar estudando para expandir seus conhecimentos e, no futuro, abrir seu próprio negócio.]]>
+                                                        </text>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                      <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                                    </Box>
+                                                    <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                                    <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="5" />
+                                                  </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
                                             </Timeline>
                                           </Box>
-                                          <Box name="opções escolha 2" id="6" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1073" y="78">
+                                          <Box name="Pergunta 2B" id="5" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="768" y="363">
+                                            <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Seu João decidiu não voltar a estudar e preferiu focar apenas em seu trabalho para garantir a renda da família. No início, acreditou que a experiência prática que tinha seria suficiente para lidar com as situações do dia a dia.\n\nPorém, certo dia precisou ir ao banco para resolver questões relacionadas a uma conta. Quando o atendente lhe entregou alguns formulários para preencher, Seu João ficou constrangido: não sabia ler nem escrever corretamente. Sentiu-se perdido diante dos papéis e teve que pedir ajuda, o que o deixou envergonhado.\n\nAlém disso, quando o funcionário explicou os procedimentos, ele teve dificuldade em entender as informações. Isso gerou atraso no atendimento e a sensação de incapacidade. Nesse momento, Seu João percebeu que sua decisão de não voltar a estudar estava lhe causando limitações.\n\nApós a experiência no banco, Seu João reflete sobre suas dificuldades. Qual caminho ele poderia seguir para melhorar sua situação?")]]>
+                                              </content>
+                                            </script>
+                                            <pluginContent>
+                                              <text>
+                                                <![CDATA[Seu João decidiu não voltar a estudar e preferiu focar apenas em seu trabalho para garantir a renda da família. No início, acreditou que a experiência prática que tinha seria suficiente para lidar com as situações do dia a dia.
+
+Porém, certo dia precisou ir ao banco para resolver questões relacionadas a uma conta. Quando o atendente lhe entregou alguns formulários para preencher, Seu João ficou constrangido: não sabia ler nem escrever corretamente. Sentiu-se perdido diante dos papéis e teve que pedir ajuda, o que o deixou envergonhado.
+
+Além disso, quando o funcionário explicou os procedimentos, ele teve dificuldade em entender as informações. Isso gerou atraso no atendimento e a sensação de incapacidade. Nesse momento, Seu João percebeu que sua decisão de não voltar a estudar estava lhe causando limitações.
+
+Após a experiência no banco, Seu João reflete sobre suas dificuldades. Qual caminho ele poderia seguir para melhorar sua situação?]]>
+                                              </text>
+                                            </pluginContent>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                            <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                          </Box>
+                                          <Box name="Opções 2 B" id="7" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1082" y="381">
                                             <bitmap>media/images/box/movement/move.png</bitmap>
                                             <script language="4">
                                               <content>
@@ -791,16 +915,117 @@ Com o passar do tempo, Seu João percebeu que queria avançar ainda mais nos est
                                             <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                                               <BehaviorLayer name="behavior_layer1">
                                                 <BehaviorKeyframe name="keyframe1" index="1">
-                                                  <Diagram />
+                                                  <Diagram>
+                                                    <Box name="Switch Case" id="1" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="109" y="156">
+                                                      <bitmap>media/images/box/interaction/choice.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion(0)):
+			self.output_1(p)
+		elif(p == self.typeConversion(0)):
+			self.output_2(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <keywords>
+                                                          <keyword>0</keyword>
+                                                          <keyword>0</keyword>
+                                                          <keyword></keyword>
+                                                        </keywords>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                                                      <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                                                      <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                                                      <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                                                    </Box>
+                                                    <Box name="Text Edit" id="2" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="452" y="22">
+                                                      <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Seu João, ao chegar ao banco, decidiu pedir ajuda a um amigo para preencher os formulários. Com o apoio dele, conseguiu completar corretamente todos os papéis e resolver as pendências.\n\nEmbora a situação tenha sido resolvida, ele percebeu que sempre dependeria de outra pessoa para tarefas simples, como assinar documentos ou entender instruções importantes. Sentiu frustração, mas também gratidão pelo auxílio recebido.\n\nEssa experiência fez com que Seu João refletisse sobre a importância da educação e compreendesse que, para ter mais independência e segurança em sua vida, estudar seria uma escolha valiosa.")]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <text>
+                                                          <![CDATA[Seu João, ao chegar ao banco, decidiu pedir ajuda a um amigo para preencher os formulários. Com o apoio dele, conseguiu completar corretamente todos os papéis e resolver as pendências.
+
+Embora a situação tenha sido resolvida, ele percebeu que sempre dependeria de outra pessoa para tarefas simples, como assinar documentos ou entender instruções importantes. Sentiu frustração, mas também gratidão pelo auxílio recebido.
+
+Essa experiência fez com que Seu João refletisse sobre a importância da educação e compreendesse que, para ter mais independência e segurança em sua vida, estudar seria uma escolha valiosa.]]>
+                                                        </text>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                      <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                                    </Box>
+                                                    <Box name="Text Edit (1)" id="3" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="463" y="352">
+                                                      <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Após enfrentar dificuldades no banco, Seu João decidiu procurar cursos e programas de alfabetização para adultos. Ele se matriculou em um programa que oferecia apoio em leitura, escrita e matemática.\n\nFrequentando as aulas, Seu João começou a ler e escrever documentos, compreender instruções de medicamentos e lidar melhor com cálculos do dia a dia. Com o tempo, sentiu-se mais seguro e confiante, conseguindo resolver tarefas sozinho e até ajudar familiares e amigos.\n\nAo final do programa, Seu João não só havia superado suas limitações, mas também adquirido autonomia e autoestima, percebendo que investir na educação transformou sua vida de forma significativa.")]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <text>
+                                                          <![CDATA[Após enfrentar dificuldades no banco, Seu João decidiu procurar cursos e programas de alfabetização para adultos. Ele se matriculou em um programa que oferecia apoio em leitura, escrita e matemática.
+
+Frequentando as aulas, Seu João começou a ler e escrever documentos, compreender instruções de medicamentos e lidar melhor com cálculos do dia a dia. Com o tempo, sentiu-se mais seguro e confiante, conseguindo resolver tarefas sozinho e até ajudar familiares e amigos.
+
+Ao final do programa, Seu João não só havia superado suas limitações, mas também adquirido autonomia e autoestima, percebendo que investir na educação transformou sua vida de forma significativa.]]>
+                                                        </text>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                                      <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                                    </Box>
+                                                    <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                                    <Link inputowner="3" indexofinput="2" outputowner="1" indexofoutput="5" />
+                                                  </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
                                             </Timeline>
                                           </Box>
                                           <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="4" />
-                                          <Link inputowner="5" indexofinput="2" outputowner="3" indexofoutput="5" />
                                           <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
                                           <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="6" />
                                           <Link inputowner="6" indexofinput="2" outputowner="4" indexofoutput="3" />
+                                          <Link inputowner="5" indexofinput="2" outputowner="3" indexofoutput="5" />
+                                          <Link inputowner="7" indexofinput="2" outputowner="5" indexofoutput="3" />
                                         </Diagram>
                                       </BehaviorKeyframe>
                                     </BehaviorLayer>
