@@ -210,7 +210,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Timeline" id="4" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="534" y="94">
+            <Box name="Inicio Aprest" id="4" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="534" y="94">
               <bitmap>media/images/box/movement/move.png</bitmap>
               <script language="4">
                 <content>
@@ -406,7 +406,7 @@ class MyClass(GeneratedClass):
                         <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                         <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                       </Box>
-                      <Box name="Timeline" id="3" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="669" y="52">
+                      <Box name="Histórias" id="3" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="669" y="52">
                         <bitmap>media/images/box/movement/move.png</bitmap>
                         <script language="4">
                           <content>
@@ -518,7 +518,7 @@ class MyClass(GeneratedClass):
                                     </BehaviorLayer>
                                   </Timeline>
                                 </Box>
-                                <Box name="Text Edit" id="2" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="283" y="30">
+                                <Box name="Text Edit" id="2" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="287" y="5">
                                   <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                   <script language="4">
                                     <content>
@@ -528,19 +528,21 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("História 1.")]]>
+		self.onStopped("História  de  seu  João:\n\nSeu João, um homem de 60 anos, trabalhou a vida toda em diferentes profissões, mas nunca teve a oportunidade de concluir o ensino fundamental. Agora, ele enfrenta dificuldades em seu dia a dia devido à falta de educação formal.")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
                                     <text>
-                                      <![CDATA[História 1.]]>
+                                      <![CDATA[História  de  seu  João:
+
+Seu João, um homem de 60 anos, trabalhou a vida toda em diferentes profissões, mas nunca teve a oportunidade de concluir o ensino fundamental. Agora, ele enfrenta dificuldades em seu dia a dia devido à falta de educação formal.]]>
                                     </text>
                                   </pluginContent>
                                   <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
                                   <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                                   <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                                 </Box>
-                                <Box name="Timeline" id="3" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="562" y="27">
+                                <Box name="História 1" id="3" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="562" y="27">
                                   <bitmap>media/images/box/movement/move.png</bitmap>
                                   <script language="4">
                                     <content>
@@ -554,12 +556,257 @@ class MyClass(GeneratedClass):
                                   <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
-                                        <Diagram />
+                                        <Diagram>
+                                          <Box name="escolha 1" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="71" y="30">
+                                            <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Seu  João  nunca teve a   oportunidade  de  concluir  o   ensino fundamental   e agora,  ele enfrenta dificuldades   em    seu   dia  a  dia devido  à  falta  de educação  formal. \n\nEle  tem dificuldade  para ler  e  escrever documentos importantes,  como  contas  de água  e  luz, e  até mesmo  para entender  as instruções  de medicamentos  que  precisa  tomar.  Além disso,  ele  se sente  inseguro  ao  lidar  com situações  que exigem  cálculos matemáticos, como  fazer compras  no mercado.\n\nEm  sua  opinião, qual  caminho  seu João  deve  seguir para  enfrentar suas  dificuldades ? ")]]>
+                                              </content>
+                                            </script>
+                                            <pluginContent>
+                                              <text>
+                                                <![CDATA[Seu  João  nunca teve a   oportunidade  de  concluir  o   ensino fundamental   e agora,  ele enfrenta dificuldades   em    seu   dia  a  dia devido  à  falta  de educação  formal. 
+
+Ele  tem dificuldade  para ler  e  escrever documentos importantes,  como  contas  de água  e  luz, e  até mesmo  para entender  as instruções  de medicamentos  que  precisa  tomar.  Além disso,  ele  se sente  inseguro  ao  lidar  com situações  que exigem  cálculos matemáticos, como  fazer compras  no mercado.
+
+Em  sua  opinião, qual  caminho  seu João  deve  seguir para  enfrentar suas  dificuldades ? ]]>
+                                              </text>
+                                            </pluginContent>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                            <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                          </Box>
+                                          <Box name="NAOMark" id="2" localization="8" tooltip="Detect NAOMark and return its ID number." x="327" y="96">
+                                            <bitmap>media/images/box/interaction/uramark.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Input name="LandmarkDetected" type="0" type_size="1" nature="4" stm_value_name="LandmarkDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
+                                            <Output name="onMarkDetected" type="2" type_size="1" nature="2" inner="0" tooltip="ID number of the detected NAOmark." id="6" />
+                                            <Output name="onNoMark" type="1" type_size="1" nature="2" inner="0" tooltip="No NAOmark has been detected." id="7" />
+                                            <Timeline enable="0">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram>
+                                                    <Box name="Get Marks List" id="1" localization="8" tooltip="Extracts the list of detected marks (empty if no mark) from the naomarks detection&#x0A;extractor data." x="139" y="75">
+                                                      <bitmap>media/images/box/box-script.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        markIDs = []
+        # Generic Extractor output format:
+        # p = [ [timeStampMaj, timeStampMin], [ tag0, tag1, ... tagN] ] with tag = [ shapeInfo, moreInfo ]
+        if(len(p) > 0):
+            markInfoArray = p[1]
+            for markInfo in markInfoArray:
+                moreInfo = markInfo[1]
+                # moreInfo = [ landmarkID ]
+                markIDs.append(moreInfo[0])
+        self.onStopped(markIDs)]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;LandmarkDetected extractor data." id="2" />
+                                                      <Output name="onStopped" type="0" type_size="1" nature="1" inner="0" tooltip="Extracted list of detected marks." id="3" />
+                                                    </Box>
+                                                    <Box name="ProcessMarksList" id="2" localization="8" tooltip="Process the list of detected marks to give the ID number of the first detected mark&#x0A;and notify when there is no mark detected.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the first detected&#x0A;mark changes." x="293" y="84">
+                                                      <bitmap>media/images/box/interaction/uramark.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.nNumLastDetected = -1
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        if(len(p) == 0):
+            self.nNumLastDetected = -1
+            self.onNoMark()
+        else:
+            if(self.nNumLastDetected != p[0]):
+                #only stimulate output if a mark wasn't detected before !
+                self.nNumLastDetected = p[0]
+                self.onMarkDetected( self.nNumLastDetected )]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="The detected NAOmarks list." id="2" />
+                                                      <Output name="onMarkDetected" type="2" type_size="1" nature="1" inner="0" tooltip="Number of the detected NAOmark." id="3" />
+                                                      <Output name="onNoMark" type="1" type_size="1" nature="1" inner="0" tooltip="No NAOmark is detected." id="4" />
+                                                    </Box>
+                                                    <Link inputowner="0" indexofinput="7" outputowner="2" indexofoutput="4" />
+                                                    <Link inputowner="0" indexofinput="6" outputowner="2" indexofoutput="3" />
+                                                    <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
+                                                    <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                                  </Diagram>
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
+                                          <Box name="Switch Case" id="3" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="461" y="95">
+                                            <bitmap>media/images/box/interaction/choice.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion(1)):
+			self.output_1(p)
+		elif(p == self.typeConversion(2)):
+			self.output_2(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+                                              </content>
+                                            </script>
+                                            <pluginContent>
+                                              <keywords>
+                                                <keyword>1</keyword>
+                                                <keyword>2</keyword>
+                                                <keyword></keyword>
+                                              </keywords>
+                                            </pluginContent>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                                            <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                                            <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                                            <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                                          </Box>
+                                          <Box name="escolha 2" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="763" y="18">
+                                            <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Seu João decidiu se matricular no EJA (Educação de Jovens e Adultos) e também participar de um programa de alfabetização para adultos, que oferecia apoio e recursos para melhorar suas habilidades em leitura, escrita e matemática. Ele começou a frequentar as aulas e logo se sentiu mais confiante, motivado e capaz de lidar com situações do dia a dia.\n\nAlém de aprender a ler e escrever documentos importantes e compreender instruções de medicamentos, o programa proporcionou apoio emocional e social, permitindo que Seu João se sentisse mais conectado à comunidade. Ele fez novos amigos, passou a ajudar seus netos com as tarefas escolares e participou de atividades comunitárias, tornando-se mais seguro em suas ações cotidianas.\n\nCom o passar do tempo, Seu João percebeu que queria avançar ainda mais nos estudos. Nesse momento, qual caminho ele poderia seguir?\n")]]>
+                                              </content>
+                                            </script>
+                                            <pluginContent>
+                                              <text>
+                                                <![CDATA[Seu João decidiu se matricular no EJA (Educação de Jovens e Adultos) e também participar de um programa de alfabetização para adultos, que oferecia apoio e recursos para melhorar suas habilidades em leitura, escrita e matemática. Ele começou a frequentar as aulas e logo se sentiu mais confiante, motivado e capaz de lidar com situações do dia a dia.
+
+Além de aprender a ler e escrever documentos importantes e compreender instruções de medicamentos, o programa proporcionou apoio emocional e social, permitindo que Seu João se sentisse mais conectado à comunidade. Ele fez novos amigos, passou a ajudar seus netos com as tarefas escolares e participou de atividades comunitárias, tornando-se mais seguro em suas ações cotidianas.
+
+Com o passar do tempo, Seu João percebeu que queria avançar ainda mais nos estudos. Nesse momento, qual caminho ele poderia seguir?
+]]>
+                                              </text>
+                                            </pluginContent>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                            <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                          </Box>
+                                          <Box name="opção B" id="5" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="845" y="340">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram />
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
+                                          <Box name="opções escolha 2" id="6" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="1073" y="78">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram />
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
+                                          <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="4" />
+                                          <Link inputowner="5" indexofinput="2" outputowner="3" indexofoutput="5" />
+                                          <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                          <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="6" />
+                                          <Link inputowner="6" indexofinput="2" outputowner="4" indexofoutput="3" />
+                                        </Diagram>
                                       </BehaviorKeyframe>
                                     </BehaviorLayer>
                                   </Timeline>
                                 </Box>
-                                <Box name="Text Edit (1)" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="267" y="154">
+                                <Box name="Text Edit (1)" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="296" y="319">
                                   <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                   <script language="4">
                                     <content>
@@ -581,7 +828,7 @@ class MyClass(GeneratedClass):
                                   <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
                                   <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
                                 </Box>
-                                <Box name="Timeline (1)" id="5" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="560" y="155">
+                                <Box name="História 2" id="5" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="560" y="155">
                                   <bitmap>media/images/box/movement/move.png</bitmap>
                                   <script language="4">
                                     <content>
