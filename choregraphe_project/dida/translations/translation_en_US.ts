@@ -11,6 +11,20 @@
         </message>
     </context>
     <context>
+        <name>behavior_1/behavior.xar:/Inicio Aprest/behavior_layer1/keyframe1/Histórias/behavior_layer1/keyframe1/História 1/behavior_layer1/keyframe1/Animated Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, onde recebi apoio em leitura, escrita e matemática. No começo, foi difícil, mas logo ganhei confiança e me senti motivado. Aprendi a ler e escrever documentos, a entender instruções de remédios e ainda recebi apoio emocional, o que me fez sentir parte da comunidade. Fiz novos amigos, comecei a ajudar meus netos nas tarefas e participei de atividades comunitárias. Hoje me sinto mais seguro no dia a dia e quero continuar estudando — agora preciso escolher qual será meu próximo passo.</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, onde recebi apoio em leitura, escrita e matemática. No começo, foi difícil, mas logo ganhei confiança e me senti motivado. Aprendi a ler e escrever documentos, a entender instruções de remédios e ainda recebi apoio emocional, o que me fez sentir parte da comunidade. Fiz novos amigos, comecei a ajudar meus netos nas tarefas e participei de atividades comunitárias. Hoje me sinto mais seguro no dia a dia e quero continuar estudando — agora preciso escolher qual será meu próximo passo.</translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_1/behavior.xar:/Inicio Aprest/behavior_layer1/keyframe1/Histórias/behavior_layer1/keyframe1/História 2/behavior_layer1/keyframe1/Animated Say</name>
         <message>
             <location filename="behavior_1/behavior.xar" line="0"/>
