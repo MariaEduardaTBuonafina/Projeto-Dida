@@ -114,7 +114,7 @@ class MyClass(GeneratedClass):
               <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram scale="84.0896">
+                    <Diagram scale="59.4604">
                       <Box name="Animated Say Text" id="1" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="492" y="241">
                         <bitmap>media/images/box/interaction/say.png</bitmap>
                         <script language="4">
@@ -250,7 +250,7 @@ class MyClass(GeneratedClass):
                                   <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
-                                        <Diagram scale="70.7107">
+                                        <Diagram scale="50">
                                           <Box name="Pergunta 1" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="80" y="69">
                                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                             <script language="4">
@@ -261,13 +261,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Eu sou Seu João, tenho 60 anos e trabalhei a vida inteira em diferentes profissões, mas nunca tive a oportunidade de concluir o ensino fundamental. Hoje enfrento dificuldades no dia a dia por não ter educação formal. Tenho problemas para ler e escrever documentos importantes, como contas de água e luz, e até mesmo para entender as instruções de medicamentos que preciso tomar. Além disso, me sinto inseguro ao lidar com situações que exigem cálculos, como fazer compras no mercado. Percebi que precisava decidir qual caminho seguir para melhorar minha vida, qual escolha devo seguir? \n")]]>
+		self.onStopped("Eu tenho 60 anos, trabalhei a vida toda, mas não concluí o ensino fundamental. Por isso, enfrento dificuldades para ler, escrever e fazer cálculos no dia a dia, o que me faz  sentir inseguro em tarefas simples, como entender contas, remédios ou compras. Agora, eu percebo que preciso escolher um caminho para mudar a minha  vida e buscar aprendizado. Qual caminho devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Eu sou Seu João, tenho 60 anos e trabalhei a vida inteira em diferentes profissões, mas nunca tive a oportunidade de concluir o ensino fundamental. Hoje enfrento dificuldades no dia a dia por não ter educação formal. Tenho problemas para ler e escrever documentos importantes, como contas de água e luz, e até mesmo para entender as instruções de medicamentos que preciso tomar. Além disso, me sinto inseguro ao lidar com situações que exigem cálculos, como fazer compras no mercado. Percebi que precisava decidir qual caminho seguir para melhorar minha vida, qual escolha devo seguir? 
-]]>
+                                                <![CDATA[Eu tenho 60 anos, trabalhei a vida toda, mas não concluí o ensino fundamental. Por isso, enfrento dificuldades para ler, escrever e fazer cálculos no dia a dia, o que me faz  sentir inseguro em tarefas simples, como entender contas, remédios ou compras. Agora, eu percebo que preciso escolher um caminho para mudar a minha  vida e buscar aprendizado. Qual caminho devo seguir?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -432,12 +431,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, que me oferecia apoio em leitura, escrita e matemática. No começo, foi desafiador, mas logo me senti mais confiante e motivado. Aprendi a ler e escrever documentos, compreender instruções de remédios e também tive apoio emocional e social, o que me fez sentir mais conectado à comunidade. Fiz novos amigos, passei a ajudar meus netos nas tarefas escolares e participei de atividades comunitárias, tornando-me mais seguro no dia a dia. Com o tempo, percebi que queria avançar ainda mais nos estudos e precisei escolher meu próximo passo, qual opção devo seguir?")]]>
+		self.onStopped("Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, onde recebi apoio em leitura, escrita e matemática. No começo, foi difícil, mas logo ganhei confiança e me senti motivado. Aprendi a ler e escrever documentos, a entender instruções de remédios e ainda recebi apoio emocional, o que me fez sentir parte da comunidade. Fiz novos amigos, comecei a ajudar meus netos nas tarefas e participei de atividades comunitárias. Hoje me sinto mais seguro no dia a dia e quero continuar estudando — agora preciso escolher qual será meu próximo passo.")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, que me oferecia apoio em leitura, escrita e matemática. No começo, foi desafiador, mas logo me senti mais confiante e motivado. Aprendi a ler e escrever documentos, compreender instruções de remédios e também tive apoio emocional e social, o que me fez sentir mais conectado à comunidade. Fiz novos amigos, passei a ajudar meus netos nas tarefas escolares e participei de atividades comunitárias, tornando-me mais seguro no dia a dia. Com o tempo, percebi que queria avançar ainda mais nos estudos e precisei escolher meu próximo passo, qual opção devo seguir?]]>
+                                                <![CDATA[Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, onde recebi apoio em leitura, escrita e matemática. No começo, foi difícil, mas logo ganhei confiança e me senti motivado. Aprendi a ler e escrever documentos, a entender instruções de remédios e ainda recebi apoio emocional, o que me fez sentir parte da comunidade. Fiz novos amigos, comecei a ajudar meus netos nas tarefas e participei de atividades comunitárias. Hoje me sinto mais seguro no dia a dia e quero continuar estudando — agora preciso escolher qual será meu próximo passo.]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -514,12 +513,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Enfrentei dificuldades no começo, mas com dedicação e apoio dos professores avancei, estudei em casa, li livros e me interessei por novas áreas como história e ciências. Tornei-me exemplo para colegas mais jovens e, anos depois, recebi emocionado meu diploma do ensino médio. A conquista trouxe orgulho, novas oportunidades e o desejo de estudar mais, talvez cursos técnicos ou até faculdade.")]]>
+		self.onStopped("No início foi difícil, mas com esforço e apoio dos professores consegui avançar. Passei a estudar em casa, ler livros e me interessar por história e ciências. Tornei-me exemplo para outros alunos e, com o tempo, recebi com emoção meu diploma do ensino médio. Essa conquista me encheu de orgulho e despertou o desejo de continuar estudando.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[Enfrentei dificuldades no começo, mas com dedicação e apoio dos professores avancei, estudei em casa, li livros e me interessei por novas áreas como história e ciências. Tornei-me exemplo para colegas mais jovens e, anos depois, recebi emocionado meu diploma do ensino médio. A conquista trouxe orgulho, novas oportunidades e o desejo de estudar mais, talvez cursos técnicos ou até faculdade.]]>
+                                                          <![CDATA[No início foi difícil, mas com esforço e apoio dos professores consegui avançar. Passei a estudar em casa, ler livros e me interessar por história e ciências. Tornei-me exemplo para outros alunos e, com o tempo, recebi com emoção meu diploma do ensino médio. Essa conquista me encheu de orgulho e despertou o desejo de continuar estudando.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -536,12 +535,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("scolhi o curso de eletricista, pois sempre gostei de trabalhar com ferramentas. Durante o curso, aprendi a parte teórica e prática, além de reforçar leitura, escrita e cálculos básicos. Fiz novas amizades, me senti motivado e, ao concluir, comecei a oferecer meus serviços de forma autônoma, conquistando clientes, independência financeira e reconhecimento na comunidade.")]]>
+		self.onStopped("Escolhi o curso de eletricista porque sempre gostei de trabalhar com ferramentas. Durante as aulas, aprendi tanto a parte teórica quanto a prática, além de melhorar minha leitura, escrita e cálculos. Fiz amigos, ganhei motivação e, ao concluir o curso, passei a trabalhar por conta própria, conquistando clientes, independência e reconhecimento na comunidade.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[scolhi o curso de eletricista, pois sempre gostei de trabalhar com ferramentas. Durante o curso, aprendi a parte teórica e prática, além de reforçar leitura, escrita e cálculos básicos. Fiz novas amizades, me senti motivado e, ao concluir, comecei a oferecer meus serviços de forma autônoma, conquistando clientes, independência financeira e reconhecimento na comunidade.]]>
+                                                          <![CDATA[Escolhi o curso de eletricista porque sempre gostei de trabalhar com ferramentas. Durante as aulas, aprendi tanto a parte teórica quanto a prática, além de melhorar minha leitura, escrita e cálculos. Fiz amigos, ganhei motivação e, ao concluir o curso, passei a trabalhar por conta própria, conquistando clientes, independência e reconhecimento na comunidade.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -798,12 +797,13 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Optei por não voltar a estudar e continuei trabalhando para garantir a renda da família. No início, achei que minha experiência prática seria suficiente. Mas certo dia, fui ao banco resolver uma conta e precisei preencher formulários. Fiquei constrangido: não sabia ler nem escrever corretamente e tive que pedir ajuda, o que me deixou envergonhado. Além disso, tive dificuldade em entender as instruções do funcionário, atrasando o atendimento e sentindo-me incapaz. Diante dessa experiência, tive que refletir sobre o que fazer, qual caminho devo seguir?")]]>
+		self.onStopped("Resumo em primeira pessoa:\nDecidi não voltar a estudar e continuei trabalhando para sustentar minha família, acreditando que minha experiência prática seria suficiente. Porém, um dia no banco, percebi minhas limitações: não consegui preencher formulários nem entender direito as instruções do atendente. Fiquei envergonhado e frustrado. Essa situação me fez refletir profundamente sobre minhas escolhas e pensar em qual caminho devo seguir para mudar isso.")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Optei por não voltar a estudar e continuei trabalhando para garantir a renda da família. No início, achei que minha experiência prática seria suficiente. Mas certo dia, fui ao banco resolver uma conta e precisei preencher formulários. Fiquei constrangido: não sabia ler nem escrever corretamente e tive que pedir ajuda, o que me deixou envergonhado. Além disso, tive dificuldade em entender as instruções do funcionário, atrasando o atendimento e sentindo-me incapaz. Diante dessa experiência, tive que refletir sobre o que fazer, qual caminho devo seguir?]]>
+                                                <![CDATA[Resumo em primeira pessoa:
+Decidi não voltar a estudar e continuei trabalhando para sustentar minha família, acreditando que minha experiência prática seria suficiente. Porém, um dia no banco, percebi minhas limitações: não consegui preencher formulários nem entender direito as instruções do atendente. Fiquei envergonhado e frustrado. Essa situação me fez refletir profundamente sobre minhas escolhas e pensar em qual caminho devo seguir para mudar isso.]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -880,12 +880,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Consegui resolver as pendências, mas percebi que sempre dependeria de outra pessoa para tarefas simples, o que gerava frustração e a sensação de falta de autonomia.")]]>
+		self.onStopped("Consegui resolver as pendências, mas percebi que sempre dependeria dos outros para tarefas simples. Isso me deixava frustrado e com a sensação de não ter autonomia.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[Consegui resolver as pendências, mas percebi que sempre dependeria de outra pessoa para tarefas simples, o que gerava frustração e a sensação de falta de autonomia.]]>
+                                                          <![CDATA[Consegui resolver as pendências, mas percebi que sempre dependeria dos outros para tarefas simples. Isso me deixava frustrado e com a sensação de não ter autonomia.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -902,12 +902,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decidi me matricular e, frequentando as aulas, aprendi a ler, escrever e fazer cálculos do dia a dia. Com o tempo, senti-me mais seguro e confiante, conseguindo resolver tarefas sozinho e até ajudar familiares e amigos. Ao final, percebi que investir na educação transformou minha vida, trazendo autonomia, autoestima e segurança.")]]>
+		self.onStopped("Decidi me matricular e, com o tempo, aprendi a ler, escrever e fazer cálculos do dia a dia. Fui ganhando confiança, passei a resolver tarefas sozinho e até ajudar minha família. Percebi que estudar transformou minha vida, trazendo autonomia, autoestima e segurança.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[Decidi me matricular e, frequentando as aulas, aprendi a ler, escrever e fazer cálculos do dia a dia. Com o tempo, senti-me mais seguro e confiante, conseguindo resolver tarefas sozinho e até ajudar familiares e amigos. Ao final, percebi que investir na educação transformou minha vida, trazendo autonomia, autoestima e segurança.]]>
+                                                          <![CDATA[Decidi me matricular e, com o tempo, aprendi a ler, escrever e fazer cálculos do dia a dia. Fui ganhando confiança, passei a resolver tarefas sozinho e até ajudar minha família. Percebi que estudar transformou minha vida, trazendo autonomia, autoestima e segurança.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1643,7 +1643,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decido me matricular, mesmo com receio. No início, estranho as aulas que envolvem tablets, pesquisas na internet e grupos de WhatsApp. Sinto-me perdida, mas logo descubro um programa de “mentoria reversa”, no qual os jovens ajudam os mais velhos. Isso me dá mais coragem. Também encontro colegas da minha idade que compartilham das mesmas dificuldades. Com paciência e apoio, começo a aprender a enviar e-mails, fazer pesquisas e até a criar um perfil em rede social para acompanhar meus netos. Cada conquista me enche de confiança e diminui a sensação de estar ultrapassada.\n\nMais adiante, surge uma nova oportunidade: participar de um workshop de criação de conteúdo digital no centro comunitário. Qual caminho devo seguir?\n")]]>
+		self.onStopped("Decido me matricular, mesmo com receio. No início, estranho as aulas que envolvem tablets, pesquisas na internet e grupos de WhatsApp. Sinto-me perdida, mas logo descubro um programa de “mentoria reversa”, no qual os jovens ajudam os mais velhos. Isso me dá mais coragem. Também encontro colegas da minha idade que compartilham das mesmas dificuldades. Com paciência e apoio, começo a aprender a enviar e-mails, fazer pesquisas e até a criar um perfil em rede social para acompanhar meus netos. Cada conquista me enche de confiança e diminui a sensação de estar ultrapassada.\r\n\r\nMais adiante, surge uma nova oportunidade: participar de um workshop de criação de conteúdo digital no centro comunitário. Qual caminho devo seguir?\r\n")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
@@ -1668,7 +1668,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decido não entrar no EJA naquele momento e escolho um clube de bordado no bairro, onde me sinto mais segura e em meu ambiente. No início, gosto da familiaridade e do convívio, mas logo percebo que continuo distante dos meus netos e do mundo atual. Não entendo as conversas sobre vídeos, jogos e aplicativos, e isso me faz sentir excluída. Essa percepção me leva a refletir sobre a importância de aprender tecnologia.\n\nQual caminho devo seguir?")]]>
+		self.onStopped("Decido não entrar no EJA naquele momento e escolho um clube de bordado no bairro, onde me sinto mais segura e em meu ambiente. No início, gosto da familiaridade e do convívio, mas logo percebo que continuo distante dos meus netos e do mundo atual. Não entendo as conversas sobre vídeos, jogos e aplicativos, e isso me faz sentir excluída. Essa percepção me leva a refletir sobre a importância de aprender tecnologia.\r\n\r\nQual caminho devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
@@ -2611,7 +2611,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Eu sou Dona Lourdes, tenho 65 anos e sempre cuidei da minha família e da casa. Trabalhei em serviços simples, mas nunca tive muito contato com computadores ou celulares modernos. Hoje, enfrento dificuldades por não saber usar bem a tecnologia. Tenho problemas para acessar aplicativos de banco, ler mensagens importantes e até para conversar com meus parentes que moram longe. Muitas vezes dependo dos meus filhos ou netos para resolver essas situações, e isso me deixa insegura e até envergonhada.\n\nPercebi que precisava decidir qual caminho seguir para melhorar minha vida e me adaptar ao mundo atual, qual caminho devo seguir?\n")]]>
+		self.onStopped("Eu sou Dona Lourdes, tenho 65 anos e sempre cuidei da minha família e da casa. Trabalhei em serviços simples, mas nunca tive muito contato com computadores ou celulares modernos. Hoje, enfrento dificuldades por não saber usar bem a tecnologia. Tenho problemas para acessar aplicativos de banco, ler mensagens importantes e até para conversar com meus parentes que moram longe. Muitas vezes dependo dos meus filhos ou netos para resolver essas situações, e isso me deixa insegura e até envergonhada.\r\n\r\nPercebi que precisava decidir qual caminho seguir para melhorar minha vida e me adaptar ao mundo atual, qual caminho devo seguir?\r\n")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
@@ -2846,7 +2846,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("No começo, achei que não precisava aprender, afinal, meus filhos e netos sempre estavam por perto para me ajudar. Mas logo percebi que isso trazia problemas. Certa vez, precisei marcar uma consulta médica pelo celular e não consegui. Em outro momento, recebi uma mensagem importante do banco e tive que esperar meu neto chegar para ler e responder. Isso me fez sentir limitada e sem autonomia.\n\nDiante dessas dificuldades, tive que refletir sobre o que fazer, qual escolha devo seguir?")]]>
+		self.onStopped("No começo, achei que não precisava aprender, afinal, meus filhos e netos sempre estavam por perto para me ajudar. Mas logo percebi que isso trazia problemas. Certa vez, precisei marcar uma consulta médica pelo celular e não consegui. Em outro momento, recebi uma mensagem importante do banco e tive que esperar meu neto chegar para ler e responder. Isso me fez sentir limitada e sem autonomia.\r\n\r\nDiante dessas dificuldades, tive que refletir sobre o que fazer, qual escolha devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
@@ -2870,7 +2870,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Dessa vez, tomei a decisão logo de início: fui atrás de oficinas para aprender tecnologia. Mesmo com receio, percebi que havia outros idosos com os mesmos desafios. Com apoio, aprendi a mexer no celular, conversar por vídeo com meus netos, entrar em grupos de amigas e até usar aplicativos de transporte e receitas.\n\nDiante dessa nova experiência, tive que refletir sobre minhas escolhas, qual opção devo seguir?")]]>
+		self.onStopped("Dessa vez, tomei a decisão logo de início: fui atrás de oficinas para aprender tecnologia. Mesmo com receio, percebi que havia outros idosos com os mesmos desafios. Com apoio, aprendi a mexer no celular, conversar por vídeo com meus netos, entrar em grupos de amigas e até usar aplicativos de transporte e receitas.\r\n\r\nDiante dessa nova experiência, tive que refletir sobre minhas escolhas, qual opção devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
@@ -3181,7 +3181,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Resolvia algumas situações, mas a sensação de incapacidade e frustração só aumentava. Eu me sentia cada vez mais “presa” e distante do mundo moderno.\nConclusão: Permanecer nesse caminho significou aceitar minhas limitações e continuar dependendo dos outros, o que me trouxe insegurança e a sensação de não acompanhar as mudanças do tempo.\n\nEssa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.")]]>
+		self.onStopped(" Resolvia algumas situações, mas a sensação de incapacidade e frustração só aumentava. Eu me sentia cada vez mais “presa” e distante do mundo moderno.\r\nConclusão: Permanecer nesse caminho significou aceitar minhas limitações e continuar dependendo dos outros, o que me trouxe insegurança e a sensação de não acompanhar as mudanças do tempo.\r\n\r\nEssa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -3268,7 +3268,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Decidi mudar de atitude e me matriculei em uma oficina comunitária de inclusão digital. No começo, tive medo de não aprender, mas logo percebi que outras pessoas da minha idade também tinham as mesmas dificuldades. Com paciência e apoio dos professores, aprendi a usar o celular, mandar mensagens, fazer chamadas de vídeo e até pagar contas pelo aplicativo. Aos poucos, ganhei confiança, autonomia e descobri que nunca é tarde para aprender.\n\nEssa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.")]]>
+		self.onStopped(" Decidi mudar de atitude e me matriculei em uma oficina comunitária de inclusão digital. No começo, tive medo de não aprender, mas logo percebi que outras pessoas da minha idade também tinham as mesmas dificuldades. Com paciência e apoio dos professores, aprendi a usar o celular, mandar mensagens, fazer chamadas de vídeo e até pagar contas pelo aplicativo. Aos poucos, ganhei confiança, autonomia e descobri que nunca é tarde para aprender.\r\n\r\nEssa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -3530,7 +3530,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Optei por aprender só o essencial: chamadas, mensagens e operações simples no banco. Isso já me trouxe independência, sem que eu me sentisse sobrecarregada.\n\nEssa escolha me deu autonomia suficiente para resolver minhas necessidades diárias e me sentir mais segura, mesmo sem explorar todos os recursos disponíveis.")]]>
+		self.onStopped(" Optei por aprender só o essencial: chamadas, mensagens e operações simples no banco. Isso já me trouxe independência, sem que eu me sentisse sobrecarregada.\r\n\r\nEssa escolha me deu autonomia suficiente para resolver minhas necessidades diárias e me sentir mais segura, mesmo sem explorar todos os recursos disponíveis.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -3616,7 +3616,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Decidi me aprofundar. Aprendi a usar redes sociais, assistir vídeos, pesquisar receitas e até participar de cursos online. Descobri um novo mundo de possibilidades que me trouxe alegria, diversão e maior conexão com minha família e amigos.\n\nEssa decisão ampliou meus horizontes, trouxe novas experiências e me mostrou que a idade não é barreira para aprender e se reinventar.")]]>
+		self.onStopped(" Decidi me aprofundar. Aprendi a usar redes sociais, assistir vídeos, pesquisar receitas e até participar de cursos online. Descobri um novo mundo de possibilidades que me trouxe alegria, diversão e maior conexão com minha família e amigos.\r\n\r\nEssa decisão ampliou meus horizontes, trouxe novas experiências e me mostrou que a idade não é barreira para aprender e se reinventar.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -3751,7 +3751,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Escolha uma das histórias dos cards na mesa por favor\n")]]>
+		self.onStopped("Escolha uma das histórias dos cards na mesa por favor\r\n")]]>
                           </content>
                         </script>
                         <pluginContent>
