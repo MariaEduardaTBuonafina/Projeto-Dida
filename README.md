@@ -14,7 +14,7 @@ Confira a publicação sobre essa conquista no LinkedIn: https://www.linkedin.co
 ## Como usar
 
 1. Clone ou baixe este repositório.  
-2. Abra o `choregraphe_project` no Choregraphe.  
+2. Abra a pasta `dida1.1` no Choregraphe.  
 3. Execute no simulador ou no robô NAO.
 
 ---
