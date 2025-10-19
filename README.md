@@ -29,5 +29,5 @@ Confira a publicação sobre essa conquista no LinkedIn: https://www.linkedin.co
 
 ## 📸 Foto da premiação
 
-![Uploading WhatsApp Image 2025-10-18 at 22.11.09.jpeg…]()
+![WhatsApp Image 2025-10-18 at 22 11 09](https://github.com/user-attachments/assets/b9c5b0a3-6772-4434-8ce2-6debabed4f2f)
 
