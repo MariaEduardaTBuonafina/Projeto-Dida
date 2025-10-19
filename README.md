@@ -1,6 +1,6 @@
 # Projeto Didá – Robô NAO
 
-Este repositório guarda os arquivos do projeto Choregraphe utilizados para programar o robô NAO para auxiliar na alfabetização, leitura, interpretação de texto e comunicação dos alunos do EJA!
+Este repositório guarda os arquivos do projeto Choregraphe utilizados para programar o robô NAO para auxiliar na alfabetização, leitura, interpretação de texto e comunicação dos alunos do EJA.
 ---
 
 ## 🏆 Conquista recente
