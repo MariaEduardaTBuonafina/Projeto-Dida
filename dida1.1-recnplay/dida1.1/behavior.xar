@@ -15,7 +15,7 @@
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
           <Diagram>
-            <Box name="Text Edit" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="280" y="61">
+            <Box name="Text Edit" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="323" y="119">
               <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
               <script language="4">
                 <content>
@@ -25,12 +25,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Olá turma, me chamo  Didá, eu serei seu robozinho educador em sua busca ao aprendizado. Para saber sobre meu projeto aperte meu pé direito. Para seguir com minhas histórias aperte meu pé esquerdo.\r\n")]]>
+		self.onStopped("Olá turma, me chamo  Didá, eu serei seu robozinho educador em sua busca ao aprendizado. Para saber sobre meu projeto aperte meu pé esquerdo. Para seguir com minhas histórias aperte meu pé direito.\n")]]>
                 </content>
               </script>
               <pluginContent>
                 <text>
-                  <![CDATA[Olá turma, me chamo  Didá, eu serei seu robozinho educador em sua busca ao aprendizado. Para saber sobre meu projeto aperte meu pé direito. Para seguir com minhas histórias aperte meu pé esquerdo.
+                  <![CDATA[Olá turma, me chamo  Didá, eu serei seu robozinho educador em sua busca ao aprendizado. Para saber sobre meu projeto aperte meu pé esquerdo. Para seguir com minhas histórias aperte meu pé direito.
 ]]>
                 </text>
               </pluginContent>
@@ -38,7 +38,7 @@ class MyClass(GeneratedClass):
               <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
               <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
             </Box>
-            <Box name="Animated Say Text" id="2" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="587" y="50">
+            <Box name="Animated Say Text" id="2" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="628" y="175">
               <bitmap>media/images/box/interaction/say.png</bitmap>
               <script language="4">
                 <content>
@@ -91,8 +91,8 @@ class MyClass(GeneratedClass):
               <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
               <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
               <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
-              <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="93" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
-              <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="87" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+              <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+              <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
               <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
                 <Choice value="disabled" />
                 <Choice value="random" />
@@ -100,7 +100,7 @@ class MyClass(GeneratedClass):
               </Parameter>
               <Resource name="Speech" type="Lock" timeout="0" />
             </Box>
-            <Box name="Inicio Aprest" id="4" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="854" y="38">
+            <Box name="Inicio Aprest" id="4" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="799" y="167">
               <bitmap>media/images/box/movement/move.png</bitmap>
               <script language="4">
                 <content>
@@ -114,7 +114,7 @@ class MyClass(GeneratedClass):
               <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram scale="59.4604">
+                    <Diagram scale="100">
                       <Box name="Animated Say Text" id="1" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="492" y="241">
                         <bitmap>media/images/box/interaction/say.png</bitmap>
                         <script language="4">
@@ -169,7 +169,7 @@ class MyClass(GeneratedClass):
                         <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
                         <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
                         <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
-                        <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="85" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                        <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="89" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
                         <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
                           <Choice value="disabled" />
                           <Choice value="random" />
@@ -187,12 +187,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Olá, eu sou o DIDÁ! Estou aqui para ajudar na aprendizagem e na alfabetização de jovens e adultos, especialmente dos nossos idosos. Nosso projeto cria histórias interativas, onde você pode ouvir, aprender novas palavras e escolher os caminhos que deseja seguir. Cada escolha muda o percurso e traz novas descobertas. Dessa forma, unimos tecnologia, leitura e imaginação para tornar o aprendizado mais divertido e significativo. ")]]>
+		self.onStopped("Olá, eu sou o DIDÁ! Estou aqui para ajudar no aprendizado e na alfabetização de jovens e adultos, especialmente dos nossos idosos. Nosso projeto cria histórias interativas, onde você pode ouvir, aprender novas palavras e escolher os caminhos que deseja seguir. Cada escolha muda o percurso e traz novas descobertas. Dessa forma, unimos tecnologia, leitura e imaginação para tornar o aprendizado mais divertido e significativo. ")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[Olá, eu sou o DIDÁ! Estou aqui para ajudar na aprendizagem e na alfabetização de jovens e adultos, especialmente dos nossos idosos. Nosso projeto cria histórias interativas, onde você pode ouvir, aprender novas palavras e escolher os caminhos que deseja seguir. Cada escolha muda o percurso e traz novas descobertas. Dessa forma, unimos tecnologia, leitura e imaginação para tornar o aprendizado mais divertido e significativo. ]]>
+                            <![CDATA[Olá, eu sou o DIDÁ! Estou aqui para ajudar no aprendizado e na alfabetização de jovens e adultos, especialmente dos nossos idosos. Nosso projeto cria histórias interativas, onde você pode ouvir, aprender novas palavras e escolher os caminhos que deseja seguir. Cada escolha muda o percurso e traz novas descobertas. Dessa forma, unimos tecnologia, leitura e imaginação para tornar o aprendizado mais divertido e significativo. ]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -213,7 +213,7 @@ class MyClass(GeneratedClass):
                         <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                           <BehaviorLayer name="behavior_layer1">
                             <BehaviorKeyframe name="keyframe1" index="1">
-                              <Diagram scale="70.7107">
+                              <Diagram scale="84.0896">
                                 <Box name="História 1" id="2" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="389" y="10">
                                   <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                   <script language="4">
@@ -224,12 +224,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("História  de  seu  João:")]]>
+		self.onStopped("História  de  seu  João")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
                                     <text>
-                                      <![CDATA[História  de  seu  João:]]>
+                                      <![CDATA[História  de  seu  João]]>
                                     </text>
                                   </pluginContent>
                                   <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -250,7 +250,7 @@ class MyClass(GeneratedClass):
                                   <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
                                     <BehaviorLayer name="behavior_layer1">
                                       <BehaviorKeyframe name="keyframe1" index="1">
-                                        <Diagram scale="50">
+                                        <Diagram scale="70.7107">
                                           <Box name="Pergunta 1" id="1" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="80" y="69">
                                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                             <script language="4">
@@ -261,182 +261,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Eu tenho 60 anos, trabalhei a vida toda, mas não concluí o ensino fundamental. Por isso, enfrento dificuldades para ler, escrever e fazer cálculos no dia a dia, o que me faz  sentir inseguro em tarefas simples, como entender contas, remédios ou compras. Agora, eu percebo que preciso escolher um caminho para mudar a minha  vida e buscar aprendizado. Qual caminho devo seguir?")]]>
+		self.onStopped("Aos 60 anos, sinto o peso de não ter concluído o Ensino Fundamental. Minha dificuldade em ler, escrever e calcular me causa insegurança diária, seja com contas, remédios ou compras. Decidi que preciso escolher um caminho, buscar o aprendizado e mudar minha vida.  Qual caminho devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Eu tenho 60 anos, trabalhei a vida toda, mas não concluí o ensino fundamental. Por isso, enfrento dificuldades para ler, escrever e fazer cálculos no dia a dia, o que me faz  sentir inseguro em tarefas simples, como entender contas, remédios ou compras. Agora, eu percebo que preciso escolher um caminho para mudar a minha  vida e buscar aprendizado. Qual caminho devo seguir?]]>
-                                              </text>
-                                            </pluginContent>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
-                                            <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
-                                            <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
-                                          </Box>
-                                          <Box name="NAOMark" id="2" localization="8" tooltip="Detect NAOMark and return its ID number." x="495" y="103">
-                                            <bitmap>media/images/box/interaction/uramark.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.bIsRunning = False
-
-    def onUnload(self):
-        self.bIsRunning = False
-
-    def onInput_onStart(self):
-        self.bIsRunning = True
-
-    def onInput_onStop(self):
-        if( self.bIsRunning ):
-            self.onUnload()
-            self.onStopped()]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                            <Input name="LandmarkDetected" type="0" type_size="1" nature="4" stm_value_name="LandmarkDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
-                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
-                                            <Output name="onMarkDetected" type="2" type_size="1" nature="2" inner="0" tooltip="ID number of the detected NAOmark." id="6" />
-                                            <Output name="onNoMark" type="1" type_size="1" nature="2" inner="0" tooltip="No NAOmark has been detected." id="7" />
-                                            <Timeline enable="0">
-                                              <BehaviorLayer name="behavior_layer1">
-                                                <BehaviorKeyframe name="keyframe1" index="1">
-                                                  <Diagram>
-                                                    <Box name="Get Marks List" id="1" localization="8" tooltip="Extracts the list of detected marks (empty if no mark) from the naomarks detection&#x0A;extractor data." x="139" y="75">
-                                                      <bitmap>media/images/box/box-script.png</bitmap>
-                                                      <script language="4">
-                                                        <content>
-                                                          <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onUnload(self):
-        #puts code for box cleanup here
-        pass
-
-    def onInput_onStart(self, p):
-        markIDs = []
-        # Generic Extractor output format:
-        # p = [ [timeStampMaj, timeStampMin], [ tag0, tag1, ... tagN] ] with tag = [ shapeInfo, moreInfo ]
-        if(len(p) > 0):
-            markInfoArray = p[1]
-            for markInfo in markInfoArray:
-                moreInfo = markInfo[1]
-                # moreInfo = [ landmarkID ]
-                markIDs.append(moreInfo[0])
-        self.onStopped(markIDs)]]>
-                                                        </content>
-                                                      </script>
-                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                                      <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;LandmarkDetected extractor data." id="2" />
-                                                      <Output name="onStopped" type="0" type_size="1" nature="1" inner="0" tooltip="Extracted list of detected marks." id="3" />
-                                                    </Box>
-                                                    <Box name="ProcessMarksList" id="2" localization="8" tooltip="Process the list of detected marks to give the ID number of the first detected mark&#x0A;and notify when there is no mark detected.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the first detected&#x0A;mark changes." x="293" y="84">
-                                                      <bitmap>media/images/box/interaction/uramark.png</bitmap>
-                                                      <script language="4">
-                                                        <content>
-                                                          <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.nNumLastDetected = -1
-
-    def onUnload(self):
-        #puts code for box cleanup here
-        pass
-
-    def onInput_onStart(self, p):
-        if(len(p) == 0):
-            self.nNumLastDetected = -1
-            self.onNoMark()
-        else:
-            if(self.nNumLastDetected != p[0]):
-                #only stimulate output if a mark wasn't detected before !
-                self.nNumLastDetected = p[0]
-                self.onMarkDetected( self.nNumLastDetected )]]>
-                                                        </content>
-                                                      </script>
-                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                                      <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="The detected NAOmarks list." id="2" />
-                                                      <Output name="onMarkDetected" type="2" type_size="1" nature="1" inner="0" tooltip="Number of the detected NAOmark." id="3" />
-                                                      <Output name="onNoMark" type="1" type_size="1" nature="1" inner="0" tooltip="No NAOmark is detected." id="4" />
-                                                    </Box>
-                                                    <Link inputowner="0" indexofinput="7" outputowner="2" indexofoutput="4" />
-                                                    <Link inputowner="0" indexofinput="6" outputowner="2" indexofoutput="3" />
-                                                    <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
-                                                    <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
-                                                  </Diagram>
-                                                </BehaviorKeyframe>
-                                              </BehaviorLayer>
-                                            </Timeline>
-                                          </Box>
-                                          <Box name="Switch Case" id="3" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="626" y="212">
-                                            <bitmap>media/images/box/interaction/choice.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[# /!\ Generated content. Do not edit!
-class MyClass(GeneratedClass):
-	def __init__(self):
-		try: # disable autoBind
-		  GeneratedClass.__init__(self, False)
-		except TypeError: # if NAOqi < 1.14
-		  GeneratedClass.__init__( self )
-
-	def onInput_onStart(self, p):
-		p = self.typeConversion(p)
-		if(p == self.typeConversion(84)):
-			self.output_1(p)
-		elif(p == self.typeConversion(85)):
-			self.output_2(p)
-		else:
-			self.onDefault()
-
-	def typeConversion(self, p):
-		try:
-			p = float(p)
-			pint = int(p)
-			if( p == pint ):
-				p = pint
-		except:
-			p = str(p)
-		return p]]>
-                                              </content>
-                                            </script>
-                                            <pluginContent>
-                                              <keywords>
-                                                <keyword>84</keyword>
-                                                <keyword>85</keyword>
-                                                <keyword></keyword>
-                                              </keywords>
-                                            </pluginContent>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
-                                            <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
-                                            <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
-                                            <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
-                                          </Box>
-                                          <Box name="Pergunta 2 A" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="837" y="35">
-                                            <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[# /!\ Generated content. Do not edit!
-class MyClass(GeneratedClass):
-	def __init__(self):
-		GeneratedClass.__init__(self)
-
-	def onInput_onStart(self):
-		self.onStopped("Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, onde recebi apoio em leitura, escrita e matemática. No começo, foi difícil, mas logo ganhei confiança e me senti motivado. Aprendi a ler e escrever documentos, a entender instruções de remédios e ainda recebi apoio emocional, o que me fez sentir parte da comunidade. Fiz novos amigos, comecei a ajudar meus netos nas tarefas e participei de atividades comunitárias. Hoje me sinto mais seguro no dia a dia e quero continuar estudando — agora preciso escolher qual será meu próximo passo.")]]>
-                                              </content>
-                                            </script>
-                                            <pluginContent>
-                                              <text>
-                                                <![CDATA[Decidi me matricular no EJA e participar de um programa de alfabetização para adultos, onde recebi apoio em leitura, escrita e matemática. No começo, foi difícil, mas logo ganhei confiança e me senti motivado. Aprendi a ler e escrever documentos, a entender instruções de remédios e ainda recebi apoio emocional, o que me fez sentir parte da comunidade. Fiz novos amigos, comecei a ajudar meus netos nas tarefas e participei de atividades comunitárias. Hoje me sinto mais seguro no dia a dia e quero continuar estudando — agora preciso escolher qual será meu próximo passo.]]>
+                                                <![CDATA[Aos 60 anos, sinto o peso de não ter concluído o Ensino Fundamental. Minha dificuldade em ler, escrever e calcular me causa insegurança diária, seja com contas, remédios ou compras. Decidi que preciso escolher um caminho, buscar o aprendizado e mudar minha vida.  Qual caminho devo seguir?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -513,12 +343,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("No início foi difícil, mas com esforço e apoio dos professores consegui avançar. Passei a estudar em casa, ler livros e me interessar por história e ciências. Tornei-me exemplo para outros alunos e, com o tempo, recebi com emoção meu diploma do ensino médio. Essa conquista me encheu de orgulho e despertou o desejo de continuar estudando.")]]>
+		self.onStopped("Com determinação e o apoio dos professores, superei as dificuldades iniciais, comecei a estudar em casa e desenvolvi um interesse por história e ciências. Tornei me um exemplo para meus colegas. A emoção de receber o diploma do Ensino Médio não só me encheu de orgulho, como reacendeu o desejo de continuar estudando, indicando que a jornada está apenas começando.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[No início foi difícil, mas com esforço e apoio dos professores consegui avançar. Passei a estudar em casa, ler livros e me interessar por história e ciências. Tornei-me exemplo para outros alunos e, com o tempo, recebi com emoção meu diploma do ensino médio. Essa conquista me encheu de orgulho e despertou o desejo de continuar estudando.]]>
+                                                          <![CDATA[Com determinação e o apoio dos professores, superei as dificuldades iniciais, comecei a estudar em casa e desenvolvi um interesse por história e ciências. Tornei me um exemplo para meus colegas. A emoção de receber o diploma do Ensino Médio não só me encheu de orgulho, como reacendeu o desejo de continuar estudando, indicando que a jornada está apenas começando.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -535,12 +365,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Escolhi o curso de eletricista porque sempre gostei de trabalhar com ferramentas. Durante as aulas, aprendi tanto a parte teórica quanto a prática, além de melhorar minha leitura, escrita e cálculos. Fiz amigos, ganhei motivação e, ao concluir o curso, passei a trabalhar por conta própria, conquistando clientes, independência e reconhecimento na comunidade.")]]>
+		self.onStopped("Escolhi o curso de eletricista porque sempre gostei de trabalhar com ferramentas. O aprendizado teórico e prático fortaleceu minhas habilidades de leitura, escrita e cálculos. Ao concluir, conquistei muito mais que uma profissão fiz amigos, ganhei independência e, trabalhando por conta própria, hoje sou reconhecido na comunidade, provando que nunca é tarde para recomeçar e prosperar.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[Escolhi o curso de eletricista porque sempre gostei de trabalhar com ferramentas. Durante as aulas, aprendi tanto a parte teórica quanto a prática, além de melhorar minha leitura, escrita e cálculos. Fiz amigos, ganhei motivação e, ao concluir o curso, passei a trabalhar por conta própria, conquistando clientes, independência e reconhecimento na comunidade.]]>
+                                                          <![CDATA[Escolhi o curso de eletricista porque sempre gostei de trabalhar com ferramentas. O aprendizado teórico e prático fortaleceu minhas habilidades de leitura, escrita e cálculos. Ao concluir, conquistei muito mais que uma profissão fiz amigos, ganhei independência e, trabalhando por conta própria, hoje sou reconhecido na comunidade, provando que nunca é tarde para recomeçar e prosperar.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -782,12 +612,13 @@ class MyClass(GeneratedClass):
                                                     <Link inputowner="8" indexofinput="2" outputowner="2" indexofoutput="3" />
                                                     <Link inputowner="0" indexofinput="4" outputowner="8" indexofoutput="4" />
                                                     <Link inputowner="0" indexofinput="4" outputowner="5" indexofoutput="4" />
+                                                    <Link inputowner="4" indexofinput="3" outputowner="4" indexofoutput="5" />
                                                   </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
                                             </Timeline>
                                           </Box>
-                                          <Box name="Pergunta 2B" id="5" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="840" y="365">
+                                          <Box name="Pergunta 2B" id="5" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="879" y="365">
                                             <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                             <script language="4">
                                               <content>
@@ -797,13 +628,14 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Resumo em primeira pessoa:\nDecidi não voltar a estudar e continuei trabalhando para sustentar minha família, acreditando que minha experiência prática seria suficiente. Porém, um dia no banco, percebi minhas limitações: não consegui preencher formulários nem entender direito as instruções do atendente. Fiquei envergonhado e frustrado. Essa situação me fez refletir profundamente sobre minhas escolhas e pensar em qual caminho devo seguir para mudar isso.")]]>
+		self.onStopped("Optei por não seguir os estudos, priorizando o trabalho e a experiência prática. No entanto, em um momento crucial no banco, a incapacidade de preencher formulários e entender as instruções do atendente me causou grande vergonha e frustração. Esse episódio doloroso me forçou a refletir profundamente e a repensar meu caminho, percebendo que preciso mudar essa limitação.\n\nQual escolha devo fazer?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Resumo em primeira pessoa:
-Decidi não voltar a estudar e continuei trabalhando para sustentar minha família, acreditando que minha experiência prática seria suficiente. Porém, um dia no banco, percebi minhas limitações: não consegui preencher formulários nem entender direito as instruções do atendente. Fiquei envergonhado e frustrado. Essa situação me fez refletir profundamente sobre minhas escolhas e pensar em qual caminho devo seguir para mudar isso.]]>
+                                                <![CDATA[Optei por não seguir os estudos, priorizando o trabalho e a experiência prática. No entanto, em um momento crucial no banco, a incapacidade de preencher formulários e entender as instruções do atendente me causou grande vergonha e frustração. Esse episódio doloroso me forçou a refletir profundamente e a repensar meu caminho, percebendo que preciso mudar essa limitação.
+
+Qual escolha devo fazer?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -902,12 +734,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decidi me matricular e, com o tempo, aprendi a ler, escrever e fazer cálculos do dia a dia. Fui ganhando confiança, passei a resolver tarefas sozinho e até ajudar minha família. Percebi que estudar transformou minha vida, trazendo autonomia, autoestima e segurança.")]]>
+		self.onStopped("Decidi me matricular e, aprendi a ler, escrever e fazer cálculos essenciais. Aos poucos, ganhei confiança para resolver tarefas diárias sozinho e até ajudar minha família. O estudo transformou minha vida, garantindo autonomia, elevando minha autoestima e trazendo uma nova segurança.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[Decidi me matricular e, com o tempo, aprendi a ler, escrever e fazer cálculos do dia a dia. Fui ganhando confiança, passei a resolver tarefas sozinho e até ajudar minha família. Percebi que estudar transformou minha vida, trazendo autonomia, autoestima e segurança.]]>
+                                                          <![CDATA[Decidi me matricular e, aprendi a ler, escrever e fazer cálculos essenciais. Aos poucos, ganhei confiança para resolver tarefas diárias sozinho e até ajudar minha família. O estudo transformou minha vida, garantindo autonomia, elevando minha autoestima e trazendo uma nova segurança.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1216,68 +1048,6 @@ class MyClass(GeneratedClass):
                                             </Parameter>
                                             <Resource name="Speech" type="Lock" timeout="0" />
                                           </Box>
-                                          <Box name="Animated Say Text (1)" id="9" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="1191" y="67">
-                                            <bitmap>media/images/box/interaction/say.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[import time
-
-class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.tts = self.session().service('ALAnimatedSpeech')
-        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
-        self.bIsRunning = False
-        self.ids = []
-
-    def onUnload(self):
-        for id in self.ids:
-            try:
-                self.ttsStop.stop(id)
-            except:
-                pass
-        while( self.bIsRunning ):
-            time.sleep( 0.2 )
-
-    def onInput_onStart(self, p):
-        self.bIsRunning = True
-        try:
-            movement = self.getParameter("Speaking movement mode")
-            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
-            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
-            sentence += str(p)
-            sentence +=  "\RST\ "
-            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
-            self.ids.append(id)
-            self.tts.wait(id)
-        finally:
-            try:
-                self.ids.remove(id)
-            except:
-                pass
-            if( self.ids == [] ):
-                self.onStopped() # activate output of the box
-                self.bIsRunning = False
-
-    def onInput_onStop(self):
-        self.onUnload()]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
-                                            <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
-                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
-                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
-                                            <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
-                                            <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="85" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
-                                            <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
-                                              <Choice value="disabled" />
-                                              <Choice value="random" />
-                                              <Choice value="contextual" />
-                                            </Parameter>
-                                            <Resource name="Speech" type="Lock" timeout="0" />
-                                          </Box>
                                           <Box name="Animated Say Text (2)" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="1172" y="411">
                                             <bitmap>media/images/box/interaction/say.png</bitmap>
                                             <script language="4">
@@ -1340,22 +1110,601 @@ class MyClass(GeneratedClass):
                                             </Parameter>
                                             <Resource name="Speech" type="Lock" timeout="0" />
                                           </Box>
-                                          <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="4" />
-                                          <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="6" />
-                                          <Link inputowner="5" indexofinput="2" outputowner="3" indexofoutput="5" />
+                                          <Box name="Timeline" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="518" y="217">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Output name="output" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
+                                            <Output name="output2" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram>
+                                                    <Box name="NAOMark" id="2" localization="8" tooltip="Detect NAOMark and return its ID number." x="282" y="72">
+                                                      <bitmap>media/images/box/interaction/uramark.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                                      <Input name="LandmarkDetected" type="0" type_size="1" nature="4" stm_value_name="LandmarkDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
+                                                      <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
+                                                      <Output name="onMarkDetected" type="2" type_size="1" nature="2" inner="0" tooltip="ID number of the detected NAOmark." id="6" />
+                                                      <Output name="onNoMark" type="1" type_size="1" nature="2" inner="0" tooltip="No NAOmark has been detected." id="7" />
+                                                      <Timeline enable="0">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram>
+                                                              <Box name="Get Marks List" id="1" localization="8" tooltip="Extracts the list of detected marks (empty if no mark) from the naomarks detection&#x0A;extractor data." x="139" y="75">
+                                                                <bitmap>media/images/box/box-script.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        markIDs = []
+        # Generic Extractor output format:
+        # p = [ [timeStampMaj, timeStampMin], [ tag0, tag1, ... tagN] ] with tag = [ shapeInfo, moreInfo ]
+        if(len(p) > 0):
+            markInfoArray = p[1]
+            for markInfo in markInfoArray:
+                moreInfo = markInfo[1]
+                # moreInfo = [ landmarkID ]
+                markIDs.append(moreInfo[0])
+        self.onStopped(markIDs)]]>
+                                                                  </content>
+                                                                </script>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;LandmarkDetected extractor data." id="2" />
+                                                                <Output name="onStopped" type="0" type_size="1" nature="1" inner="0" tooltip="Extracted list of detected marks." id="3" />
+                                                              </Box>
+                                                              <Box name="ProcessMarksList" id="2" localization="8" tooltip="Process the list of detected marks to give the ID number of the first detected mark&#x0A;and notify when there is no mark detected.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the first detected&#x0A;mark changes." x="293" y="84">
+                                                                <bitmap>media/images/box/interaction/uramark.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.nNumLastDetected = -1
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        if(len(p) == 0):
+            self.nNumLastDetected = -1
+            self.onNoMark()
+        else:
+            if(self.nNumLastDetected != p[0]):
+                #only stimulate output if a mark wasn't detected before !
+                self.nNumLastDetected = p[0]
+                self.onMarkDetected( self.nNumLastDetected )]]>
+                                                                  </content>
+                                                                </script>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="The detected NAOmarks list." id="2" />
+                                                                <Output name="onMarkDetected" type="2" type_size="1" nature="1" inner="0" tooltip="Number of the detected NAOmark." id="3" />
+                                                                <Output name="onNoMark" type="1" type_size="1" nature="1" inner="0" tooltip="No NAOmark is detected." id="4" />
+                                                              </Box>
+                                                              <Link inputowner="0" indexofinput="7" outputowner="2" indexofoutput="4" />
+                                                              <Link inputowner="0" indexofinput="6" outputowner="2" indexofoutput="3" />
+                                                              <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
+                                                              <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                                            </Diagram>
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                      </Timeline>
+                                                    </Box>
+                                                    <Box name="Switch Case" id="1" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="520" y="101">
+                                                      <bitmap>media/images/box/interaction/choice.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion(84)):
+			self.output_1(p)
+		elif(p == self.typeConversion(68)):
+			self.output_2(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+                                                        </content>
+                                                      </script>
+                                                      <pluginContent>
+                                                        <keywords>
+                                                          <keyword>84</keyword>
+                                                          <keyword>68</keyword>
+                                                          <keyword></keyword>
+                                                        </keywords>
+                                                      </pluginContent>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                                                      <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                                                      <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                                                      <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                                                    </Box>
+                                                    <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                                    <Link inputowner="2" indexofinput="3" outputowner="2" indexofoutput="5" />
+                                                    <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="6" />
+                                                    <Link inputowner="0" indexofinput="5" outputowner="1" indexofoutput="4" />
+                                                    <Link inputowner="0" indexofinput="6" outputowner="1" indexofoutput="5" />
+                                                  </Diagram>
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
+                                          <Box name="Text Edit" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="871" y="77">
+                                            <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Ingressei no EJA e no programa de alfabetização. O início foi um desafio, mas o apoio em leitura, escrita e matemática trouxe confiança e motivação. Hoje, consigo ler documentos e instruções de remédios, me sinto parte da comunidade, fiz amigos e ajudo meus netos. Minha segurança no dia a dia é total, mas a jornada não para agora preciso decidir qual será meu próximo passo nos estudos.")]]>
+                                              </content>
+                                            </script>
+                                            <pluginContent>
+                                              <text>
+                                                <![CDATA[Ingressei no EJA e no programa de alfabetização. O início foi um desafio, mas o apoio em leitura, escrita e matemática trouxe confiança e motivação. Hoje, consigo ler documentos e instruções de remédios, me sinto parte da comunidade, fiz amigos e ajudo meus netos. Minha segurança no dia a dia é total, mas a jornada não para agora preciso decidir qual será meu próximo passo nos estudos.]]>
+                                              </text>
+                                            </pluginContent>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                                            <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                                          </Box>
+                                          <Box name="Animated Say Text (1)" id="9" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="1182" y="81">
+                                            <bitmap>media/images/box/interaction/say.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.tts = self.session().service('ALAnimatedSpeech')
+        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            movement = self.getParameter("Speaking movement mode")
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                            <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                            <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                            <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="85" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                            <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
+                                              <Choice value="disabled" />
+                                              <Choice value="random" />
+                                              <Choice value="contextual" />
+                                            </Parameter>
+                                            <Resource name="Speech" type="Lock" timeout="0" />
+                                          </Box>
+                                          <Box name="olho história" id="3" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="142" y="670">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram>
+                                                    <Box name="Eye LEDs" id="1" localization="8" tooltip="Set the LED color of the eyes. Note that you must open the box to enter the color." x="194" y="64">
+                                                      <bitmap>media/images/box/interaction/LED.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                                      <Parameter name="Side" inherits_from_parent="0" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the eye where the LED light is set." id="4">
+                                                        <Choice value="Both" />
+                                                        <Choice value="Left" />
+                                                        <Choice value="Right" />
+                                                      </Parameter>
+                                                      <Parameter name="Duration (s)" inherits_from_parent="0" content_type="2" value="1" default_value="0.1" min="0" max="5" tooltip="Transition&apos;s duration in seconds." id="5" />
+                                                      <Timeline enable="0">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram>
+                                                              <Box name="Eyes LEDs" id="15" localization="8" tooltip="Set the color of LEDs of robot&apos;s eyes." x="281" y="41">
+                                                                <bitmap>media/images/box/interaction/LED.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.fadeOps = []
+        self.leds = self.session().service("ALLeds")
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_color(self, p):
+        if( self.getParameter("Side") == "Left" ):
+            sGroup = "LeftFaceLeds"
+        elif( self.getParameter("Side") == "Right" ):
+            sGroup = "RightFaceLeds"
+        else:
+            sGroup = "FaceLeds"
+        fadeOp = self.leds.fadeRGB(sGroup, 256*256*p[0] + 256*p[1] + p[2], self.getParameter("Duration (s)"), _async=True)
+        self.fadeOps.append(fadeOp)
+        fadeOp.wait()
+        self.fadeOps.remove(fadeOp)
+        if( self.fadeOps == [] ):
+            self.onDone() # activate output of the box]]>
+                                                                  </content>
+                                                                </script>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="color" type="2" type_size="3" nature="2" inner="0" tooltip="Color of robot&apos;s eyes." id="2" />
+                                                                <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                                                <Parameter name="Side" inherits_from_parent="1" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the eye where the LED light is set." id="4">
+                                                                  <Choice value="Both" />
+                                                                  <Choice value="Left" />
+                                                                  <Choice value="Right" />
+                                                                </Parameter>
+                                                                <Parameter name="Duration (s)" inherits_from_parent="1" content_type="2" value="0.1" default_value="0.1" min="0" max="5" tooltip="Transition&apos;s duration in seconds." id="5" />
+                                                              </Box>
+                                                              <Box name="Color Edit" id="16" localization="8" tooltip="Transmit a table of number [R,G,B] correponsding to the selected color." plugin="coloredit_plugin" x="105" y="47">
+                                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped([79, 158, 0])]]>
+                                                                  </content>
+                                                                </script>
+                                                                <pluginContent>
+                                                                  <color>#4f9e00</color>
+                                                                </pluginContent>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="To send the color on the output." id="2" />
+                                                                <Output name="onStopped" type="2" type_size="3" nature="1" inner="0" tooltip="[R,G,B] with R, G and B between 0 and 255." id="3" />
+                                                              </Box>
+                                                              <Link inputowner="15" indexofinput="2" outputowner="16" indexofoutput="3" />
+                                                              <Link inputowner="16" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                                              <Link inputowner="0" indexofinput="3" outputowner="15" indexofoutput="3" />
+                                                            </Diagram>
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                      </Timeline>
+                                                    </Box>
+                                                    <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                                    <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="3" />
+                                                  </Diagram>
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
                                           <Link inputowner="0" indexofinput="4" outputowner="6" indexofoutput="4" />
                                           <Link inputowner="0" indexofinput="4" outputowner="7" indexofoutput="4" />
                                           <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
                                           <Link inputowner="8" indexofinput="2" outputowner="1" indexofoutput="3" />
-                                          <Link inputowner="2" indexofinput="2" outputowner="8" indexofoutput="4" />
-                                          <Link inputowner="9" indexofinput="2" outputowner="4" indexofoutput="3" />
-                                          <Link inputowner="6" indexofinput="2" outputowner="9" indexofoutput="4" />
                                           <Link inputowner="10" indexofinput="2" outputowner="5" indexofoutput="3" />
                                           <Link inputowner="7" indexofinput="2" outputowner="10" indexofoutput="4" />
+                                          <Link inputowner="2" indexofinput="2" outputowner="8" indexofoutput="4" />
+                                          <Link inputowner="5" indexofinput="2" outputowner="2" indexofoutput="6" />
+                                          <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="5" />
+                                          <Link inputowner="9" indexofinput="2" outputowner="4" indexofoutput="3" />
+                                          <Link inputowner="6" indexofinput="2" outputowner="9" indexofoutput="4" />
+                                          <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="1" />
                                         </Diagram>
                                       </BehaviorKeyframe>
                                     </BehaviorLayer>
                                   </Timeline>
+                                </Box>
+                                <Box name="Animated Say Text" id="8" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="724" y="42">
+                                  <bitmap>media/images/box/interaction/say.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.tts = self.session().service('ALAnimatedSpeech')
+        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            movement = self.getParameter("Speaking movement mode")
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                  <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                  <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                  <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="85" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                  <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
+                                    <Choice value="disabled" />
+                                    <Choice value="random" />
+                                    <Choice value="contextual" />
+                                  </Parameter>
+                                  <Resource name="Speech" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="NAOMark" id="1" localization="8" tooltip="Detect NAOMark and return its ID number." x="71" y="49">
+                                  <bitmap>media/images/box/interaction/uramark.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                  <Input name="LandmarkDetected" type="0" type_size="1" nature="4" stm_value_name="LandmarkDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
+                                  <Output name="onMarkDetected" type="2" type_size="1" nature="2" inner="0" tooltip="ID number of the detected NAOmark." id="6" />
+                                  <Output name="onNoMark" type="1" type_size="1" nature="2" inner="0" tooltip="No NAOmark has been detected." id="7" />
+                                  <Timeline enable="0">
+                                    <BehaviorLayer name="behavior_layer1">
+                                      <BehaviorKeyframe name="keyframe1" index="1">
+                                        <Diagram>
+                                          <Box name="Get Marks List" id="1" localization="8" tooltip="Extracts the list of detected marks (empty if no mark) from the naomarks detection&#x0A;extractor data." x="139" y="75">
+                                            <bitmap>media/images/box/box-script.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        markIDs = []
+        # Generic Extractor output format:
+        # p = [ [timeStampMaj, timeStampMin], [ tag0, tag1, ... tagN] ] with tag = [ shapeInfo, moreInfo ]
+        if(len(p) > 0):
+            markInfoArray = p[1]
+            for markInfo in markInfoArray:
+                moreInfo = markInfo[1]
+                # moreInfo = [ landmarkID ]
+                markIDs.append(moreInfo[0])
+        self.onStopped(markIDs)]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;LandmarkDetected extractor data." id="2" />
+                                            <Output name="onStopped" type="0" type_size="1" nature="1" inner="0" tooltip="Extracted list of detected marks." id="3" />
+                                          </Box>
+                                          <Box name="ProcessMarksList" id="2" localization="8" tooltip="Process the list of detected marks to give the ID number of the first detected mark&#x0A;and notify when there is no mark detected.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the first detected&#x0A;mark changes." x="293" y="84">
+                                            <bitmap>media/images/box/interaction/uramark.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.nNumLastDetected = -1
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        if(len(p) == 0):
+            self.nNumLastDetected = -1
+            self.onNoMark()
+        else:
+            if(self.nNumLastDetected != p[0]):
+                #only stimulate output if a mark wasn't detected before !
+                self.nNumLastDetected = p[0]
+                self.onMarkDetected( self.nNumLastDetected )]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="The detected NAOmarks list." id="2" />
+                                            <Output name="onMarkDetected" type="2" type_size="1" nature="1" inner="0" tooltip="Number of the detected NAOmark." id="3" />
+                                            <Output name="onNoMark" type="1" type_size="1" nature="1" inner="0" tooltip="No NAOmark is detected." id="4" />
+                                          </Box>
+                                          <Link inputowner="0" indexofinput="7" outputowner="2" indexofoutput="4" />
+                                          <Link inputowner="0" indexofinput="6" outputowner="2" indexofoutput="3" />
+                                          <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
+                                          <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
+                                        </Diagram>
+                                      </BehaviorKeyframe>
+                                    </BehaviorLayer>
+                                  </Timeline>
+                                </Box>
+                                <Box name="Switch Case" id="7" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="161" y="157">
+                                  <bitmap>media/images/box/interaction/choice.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		try: # disable autoBind
+		  GeneratedClass.__init__(self, False)
+		except TypeError: # if NAOqi < 1.14
+		  GeneratedClass.__init__( self )
+
+	def onInput_onStart(self, p):
+		p = self.typeConversion(p)
+		if(p == self.typeConversion(64)):
+			self.output_1(p)
+		else:
+			self.onDefault()
+
+	def typeConversion(self, p):
+		try:
+			p = float(p)
+			pint = int(p)
+			if( p == pint ):
+				p = pint
+		except:
+			p = str(p)
+		return p]]>
+                                    </content>
+                                  </script>
+                                  <pluginContent>
+                                    <keywords>
+                                      <keyword>64</keyword>
+                                      <keyword></keyword>
+                                      <keyword></keyword>
+                                      <keyword></keyword>
+                                    </keywords>
+                                  </pluginContent>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
+                                  <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
+                                  <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
+                                  <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
+                                  <Output name="output_3" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="6" />
                                 </Box>
                                 <Box name="História 2" id="4" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="402" y="223">
                                   <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
@@ -1367,12 +1716,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("HISTÓRIA DE DONA LÚCIA:  ")]]>
+		self.onStopped("HISTÓRIA DE DONA LÚCIA")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
                                     <text>
-                                      <![CDATA[HISTÓRIA DE DONA LÚCIA:  ]]>
+                                      <![CDATA[HISTÓRIA DE DONA LÚCIA]]>
                                     </text>
                                   </pluginContent>
                                   <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1404,14 +1753,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Tenho 60 anos, sou aposentada e avó de adolescentes. Sempre sonhei em concluir o ensino fundamental. Depois de uma vida inteira dedicada ao trabalho manual e à minha família, sinto um vazio e um desejo enorme de me atualizar, principalmente para me comunicar melhor com meus netos, que vivem conectados ao mundo digital. Mas confesso que tenho medo: minha memória já não é a mesma, minha vista cansa facilmente e só de pensar em lidar com celulares e computadores fico assustada. Além disso, me preocupo em não acompanhar o ritmo dos jovens e acabar virando motivo de chacota em sala.\r\n\r\nDiante dessa situação, sinto que dois caminhos estão diante de mim, qual você vai escolher?")]]>
+		self.onStopped("Aos 60 anos, como aposentada e avó, carrego o sonho de concluir o Ensino Fundamental. Sinto um vazio e a necessidade de me atualizar, especialmente para me conectar com meus netos e o mundo digital. Contudo, o medo é real me preocupo com a memória, a vista e a dificuldade com a tecnologia, temendo ser motivo de chacota se não acompanhar o ritmo dos jovens.")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Tenho 60 anos, sou aposentada e avó de adolescentes. Sempre sonhei em concluir o ensino fundamental. Depois de uma vida inteira dedicada ao trabalho manual e à minha família, sinto um vazio e um desejo enorme de me atualizar, principalmente para me comunicar melhor com meus netos, que vivem conectados ao mundo digital. Mas confesso que tenho medo: minha memória já não é a mesma, minha vista cansa facilmente e só de pensar em lidar com celulares e computadores fico assustada. Além disso, me preocupo em não acompanhar o ritmo dos jovens e acabar virando motivo de chacota em sala.
-
-Diante dessa situação, sinto que dois caminhos estão diante de mim, qual você vai escolher?]]>
+                                                <![CDATA[Aos 60 anos, como aposentada e avó, carrego o sonho de concluir o Ensino Fundamental. Sinto um vazio e a necessidade de me atualizar, especialmente para me conectar com meus netos e o mundo digital. Contudo, o medo é real me preocupo com a memória, a vista e a dificuldade com a tecnologia, temendo ser motivo de chacota se não acompanhar o ritmo dos jovens.]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1602,9 +1949,9 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion(119)):
+		if(p == self.typeConversion(107)):
 			self.output_1(p)
-		elif(p == self.typeConversion(130)):
+		elif(p == self.typeConversion(108)):
 			self.output_2(p)
 		else:
 			self.onDefault()
@@ -1622,8 +1969,8 @@ class MyClass(GeneratedClass):
                                             </script>
                                             <pluginContent>
                                               <keywords>
-                                                <keyword>119</keyword>
-                                                <keyword>130</keyword>
+                                                <keyword>107</keyword>
+                                                <keyword>108</keyword>
                                                 <keyword></keyword>
                                               </keywords>
                                             </pluginContent>
@@ -1643,15 +1990,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decido me matricular, mesmo com receio. No início, estranho as aulas que envolvem tablets, pesquisas na internet e grupos de WhatsApp. Sinto-me perdida, mas logo descubro um programa de “mentoria reversa”, no qual os jovens ajudam os mais velhos. Isso me dá mais coragem. Também encontro colegas da minha idade que compartilham das mesmas dificuldades. Com paciência e apoio, começo a aprender a enviar e-mails, fazer pesquisas e até a criar um perfil em rede social para acompanhar meus netos. Cada conquista me enche de confiança e diminui a sensação de estar ultrapassada.\r\n\r\nMais adiante, surge uma nova oportunidade: participar de um workshop de criação de conteúdo digital no centro comunitário. Qual caminho devo seguir?\r\n")]]>
+		self.onStopped("Supero o receio e me matriculo, apesar de estranhar as aulas com tablets, internet e WhatsApp. A chave é o programa de mentoria reversa, onde os jovens nos ajudam, e o apoio de colegas da minha idade. Com paciência, aprendo a enviar emails, pesquisar e até a criar um perfil para acompanhar meus netos nas redes. Cada avanço aumenta minha confiança e elimina a sensação de estar ultrapassada. Agora, surge uma nova oportunidade um workshop de criação de conteúdo digital. Qual caminho devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Decido me matricular, mesmo com receio. No início, estranho as aulas que envolvem tablets, pesquisas na internet e grupos de WhatsApp. Sinto-me perdida, mas logo descubro um programa de “mentoria reversa”, no qual os jovens ajudam os mais velhos. Isso me dá mais coragem. Também encontro colegas da minha idade que compartilham das mesmas dificuldades. Com paciência e apoio, começo a aprender a enviar e-mails, fazer pesquisas e até a criar um perfil em rede social para acompanhar meus netos. Cada conquista me enche de confiança e diminui a sensação de estar ultrapassada.
-
-Mais adiante, surge uma nova oportunidade: participar de um workshop de criação de conteúdo digital no centro comunitário. Qual caminho devo seguir?
-]]>
+                                                <![CDATA[Supero o receio e me matriculo, apesar de estranhar as aulas com tablets, internet e WhatsApp. A chave é o programa de mentoria reversa, onde os jovens nos ajudam, e o apoio de colegas da minha idade. Com paciência, aprendo a enviar emails, pesquisar e até a criar um perfil para acompanhar meus netos nas redes. Cada avanço aumenta minha confiança e elimina a sensação de estar ultrapassada. Agora, surge uma nova oportunidade um workshop de criação de conteúdo digital. Qual caminho devo seguir?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1668,14 +2012,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Decido não entrar no EJA naquele momento e escolho um clube de bordado no bairro, onde me sinto mais segura e em meu ambiente. No início, gosto da familiaridade e do convívio, mas logo percebo que continuo distante dos meus netos e do mundo atual. Não entendo as conversas sobre vídeos, jogos e aplicativos, e isso me faz sentir excluída. Essa percepção me leva a refletir sobre a importância de aprender tecnologia.\r\n\r\nQual caminho devo seguir?")]]>
+		self.onStopped("Inicialmente, optei pela segurança do clube de bordado, onde encontrei familiaridade e convívio. Contudo, essa escolha me manteve distante dos meus netos e do mundo digital. Ao não entender suas conversas sobre vídeos e aplicativos, me senti profundamente excluída. Essa exclusão me forçou a refletir a familiaridade não é suficiente preciso urgentemente aprender tecnologia.  Qual caminho devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Decido não entrar no EJA naquele momento e escolho um clube de bordado no bairro, onde me sinto mais segura e em meu ambiente. No início, gosto da familiaridade e do convívio, mas logo percebo que continuo distante dos meus netos e do mundo atual. Não entendo as conversas sobre vídeos, jogos e aplicativos, e isso me faz sentir excluída. Essa percepção me leva a refletir sobre a importância de aprender tecnologia.
-
-Qual caminho devo seguir?]]>
+                                                <![CDATA[Inicialmente, optei pela segurança do clube de bordado, onde encontrei familiaridade e convívio. Contudo, essa escolha me manteve distante dos meus netos e do mundo digital. Ao não entender suas conversas sobre vídeos e aplicativos, me senti profundamente excluída. Essa exclusão me forçou a refletir a familiaridade não é suficiente preciso urgentemente aprender tecnologia.  Qual caminho devo seguir?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -1948,9 +2290,9 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion(170)):
+		if(p == self.typeConversion(107)):
 			self.output_1(p)
-		elif(p == self.typeConversion(187)):
+		elif(p == self.typeConversion(108)):
 			self.output_2(p)
 		else:
 			self.onDefault()
@@ -1968,8 +2310,8 @@ class MyClass(GeneratedClass):
                                                       </script>
                                                       <pluginContent>
                                                         <keywords>
-                                                          <keyword>170</keyword>
-                                                          <keyword>187</keyword>
+                                                          <keyword>107</keyword>
+                                                          <keyword>108</keyword>
                                                           <keyword></keyword>
                                                         </keywords>
                                                       </pluginContent>
@@ -1989,12 +2331,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Ao entrar no EJA, percebi que não existe idade certa para aprender, e que cada conquista, por menor que pareça, tem um valor enorme. Descobri que não sou a única com dificuldades, e que, com paciência e apoio, é possível superar o medo da tecnologia. Hoje consigo conversar com meus netos pelo celular, trocar mensagens, acessar a internet e até criar conteúdos simples que me fazem sentir parte desse mundo digital. O mais importante foi recuperar minha autoestima e provar para mim mesma que nunca é tarde para sonhar, recomeçar e me reinventar.")]]>
+		self.onStopped("Ao ingressar no EJA, entendi que não existe idade para aprender e que toda conquista tem valor. Descobri que a superação do medo da tecnologia é possível com paciência e apoio. Hoje, consigo conversar e trocar mensagens com meus netos, acessar a internet e até criar conteúdos digitais. O mais importante é que recuperei minha autoestima e provei a mim mesma que nunca é tarde para sonhar, recomeçar e me reinventar.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[Ao entrar no EJA, percebi que não existe idade certa para aprender, e que cada conquista, por menor que pareça, tem um valor enorme. Descobri que não sou a única com dificuldades, e que, com paciência e apoio, é possível superar o medo da tecnologia. Hoje consigo conversar com meus netos pelo celular, trocar mensagens, acessar a internet e até criar conteúdos simples que me fazem sentir parte desse mundo digital. O mais importante foi recuperar minha autoestima e provar para mim mesma que nunca é tarde para sonhar, recomeçar e me reinventar.]]>
+                                                          <![CDATA[Ao ingressar no EJA, entendi que não existe idade para aprender e que toda conquista tem valor. Descobri que a superação do medo da tecnologia é possível com paciência e apoio. Hoje, consigo conversar e trocar mensagens com meus netos, acessar a internet e até criar conteúdos digitais. O mais importante é que recuperei minha autoestima e provei a mim mesma que nunca é tarde para sonhar, recomeçar e me reinventar.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -2142,9 +2484,9 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion(64)):
+		if(p == self.typeConversion(107)):
 			self.output_1(p)
-		elif(p == self.typeConversion(68)):
+		elif(p == self.typeConversion(108)):
 			self.output_2(p)
 		else:
 			self.onDefault()
@@ -2162,8 +2504,8 @@ class MyClass(GeneratedClass):
                                                       </script>
                                                       <pluginContent>
                                                         <keywords>
-                                                          <keyword>64</keyword>
-                                                          <keyword>68</keyword>
+                                                          <keyword>107</keyword>
+                                                          <keyword>108</keyword>
                                                           <keyword></keyword>
                                                         </keywords>
                                                       </pluginContent>
@@ -2183,12 +2525,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("No início, o bordado me trouxe conforto e acolhimento, mas logo percebi que eu precisava de algo a mais. Foi quando decidi buscar cursos de informática e programas de EJA adaptados, no meu próprio ritmo. Aprender a mexer no celular, no computador e a navegar pela internet abriu portas que eu nunca imaginei. Hoje sou mais independente, consigo resolver minhas próprias questões, acompanhar a vida dos meus netos e, acima de tudo, me sinto novamente parte da família e do presente. Entendi que a educação, em qualquer idade, é o melhor caminho para manter viva a minha curiosidade e fortalecer a minha confiança.")]]>
+		self.onStopped("Embora o bordado trouxesse conforto inicial, logo busquei mais me matriculei em cursos de informática e em programas de EJA adaptados. Aprender a usar o celular, computador e a navegar na internet abriu portas inesperadas. Hoje sou mais independente, resolvo minhas próprias questões e acompanho a vida dos meus netos. Acima de tudo, me sinto parte da família e do presente. Entendi que a educação, em qualquer idade, é o caminho para manter a curiosidade e fortalecer a confiança.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[No início, o bordado me trouxe conforto e acolhimento, mas logo percebi que eu precisava de algo a mais. Foi quando decidi buscar cursos de informática e programas de EJA adaptados, no meu próprio ritmo. Aprender a mexer no celular, no computador e a navegar pela internet abriu portas que eu nunca imaginei. Hoje sou mais independente, consigo resolver minhas próprias questões, acompanhar a vida dos meus netos e, acima de tudo, me sinto novamente parte da família e do presente. Entendi que a educação, em qualquer idade, é o melhor caminho para manter viva a minha curiosidade e fortalecer a minha confiança.]]>
+                                                          <![CDATA[Embora o bordado trouxesse conforto inicial, logo busquei mais me matriculei em cursos de informática e em programas de EJA adaptados. Aprender a usar o celular, computador e a navegar na internet abriu portas inesperadas. Hoje sou mais independente, resolvo minhas próprias questões e acompanho a vida dos meus netos. Acima de tudo, me sinto parte da família e do presente. Entendi que a educação, em qualquer idade, é o caminho para manter a curiosidade e fortalecer a confiança.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -2199,6 +2541,116 @@ class MyClass(GeneratedClass):
                                                     <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="6" />
                                                     <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
                                                     <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="5" />
+                                                  </Diagram>
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
+                                          <Box name="olho história" id="11" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="158" y="402">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram>
+                                                    <Box name="Eye LEDs" id="1" localization="8" tooltip="Set the LED color of the eyes. Note that you must open the box to enter the color." x="194" y="64">
+                                                      <bitmap>media/images/box/interaction/LED.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                                      <Parameter name="Side" inherits_from_parent="0" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the eye where the LED light is set." id="4">
+                                                        <Choice value="Both" />
+                                                        <Choice value="Left" />
+                                                        <Choice value="Right" />
+                                                      </Parameter>
+                                                      <Parameter name="Duration (s)" inherits_from_parent="0" content_type="2" value="1" default_value="0.1" min="0" max="5" tooltip="Transition&apos;s duration in seconds." id="5" />
+                                                      <Timeline enable="0">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram>
+                                                              <Box name="Eyes LEDs" id="15" localization="8" tooltip="Set the color of LEDs of robot&apos;s eyes." x="281" y="41">
+                                                                <bitmap>media/images/box/interaction/LED.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.fadeOps = []
+        self.leds = self.session().service("ALLeds")
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_color(self, p):
+        if( self.getParameter("Side") == "Left" ):
+            sGroup = "LeftFaceLeds"
+        elif( self.getParameter("Side") == "Right" ):
+            sGroup = "RightFaceLeds"
+        else:
+            sGroup = "FaceLeds"
+        fadeOp = self.leds.fadeRGB(sGroup, 256*256*p[0] + 256*p[1] + p[2], self.getParameter("Duration (s)"), _async=True)
+        self.fadeOps.append(fadeOp)
+        fadeOp.wait()
+        self.fadeOps.remove(fadeOp)
+        if( self.fadeOps == [] ):
+            self.onDone() # activate output of the box]]>
+                                                                  </content>
+                                                                </script>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="color" type="2" type_size="3" nature="2" inner="0" tooltip="Color of robot&apos;s eyes." id="2" />
+                                                                <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                                                <Parameter name="Side" inherits_from_parent="1" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the eye where the LED light is set." id="4">
+                                                                  <Choice value="Both" />
+                                                                  <Choice value="Left" />
+                                                                  <Choice value="Right" />
+                                                                </Parameter>
+                                                                <Parameter name="Duration (s)" inherits_from_parent="1" content_type="2" value="0.1" default_value="0.1" min="0" max="5" tooltip="Transition&apos;s duration in seconds." id="5" />
+                                                              </Box>
+                                                              <Box name="Color Edit" id="16" localization="8" tooltip="Transmit a table of number [R,G,B] correponsding to the selected color." plugin="coloredit_plugin" x="105" y="47">
+                                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped([255, 60, 223])]]>
+                                                                  </content>
+                                                                </script>
+                                                                <pluginContent>
+                                                                  <color>#ff3cdf</color>
+                                                                </pluginContent>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="To send the color on the output." id="2" />
+                                                                <Output name="onStopped" type="2" type_size="3" nature="1" inner="0" tooltip="[R,G,B] with R, G and B between 0 and 255." id="3" />
+                                                              </Box>
+                                                              <Link inputowner="15" indexofinput="2" outputowner="16" indexofoutput="3" />
+                                                              <Link inputowner="16" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                                              <Link inputowner="0" indexofinput="3" outputowner="15" indexofoutput="3" />
+                                                            </Diagram>
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                      </Timeline>
+                                                    </Box>
+                                                    <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                                    <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="3" />
                                                   </Diagram>
                                                 </BehaviorKeyframe>
                                               </BehaviorLayer>
@@ -2216,72 +2668,11 @@ class MyClass(GeneratedClass):
                                           <Link inputowner="10" indexofinput="2" outputowner="8" indexofoutput="4" />
                                           <Link inputowner="0" indexofinput="4" outputowner="9" indexofoutput="4" />
                                           <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
+                                          <Link inputowner="11" indexofinput="2" outputowner="0" indexofoutput="1" />
                                         </Diagram>
                                       </BehaviorKeyframe>
                                     </BehaviorLayer>
                                   </Timeline>
-                                </Box>
-                                <Box name="Animated Say Text" id="8" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="724" y="42">
-                                  <bitmap>media/images/box/interaction/say.png</bitmap>
-                                  <script language="4">
-                                    <content>
-                                      <![CDATA[import time
-
-class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.tts = self.session().service('ALAnimatedSpeech')
-        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
-        self.bIsRunning = False
-        self.ids = []
-
-    def onUnload(self):
-        for id in self.ids:
-            try:
-                self.ttsStop.stop(id)
-            except:
-                pass
-        while( self.bIsRunning ):
-            time.sleep( 0.2 )
-
-    def onInput_onStart(self, p):
-        self.bIsRunning = True
-        try:
-            movement = self.getParameter("Speaking movement mode")
-            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
-            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
-            sentence += str(p)
-            sentence +=  "\RST\ "
-            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
-            self.ids.append(id)
-            self.tts.wait(id)
-        finally:
-            try:
-                self.ids.remove(id)
-            except:
-                pass
-            if( self.ids == [] ):
-                self.onStopped() # activate output of the box
-                self.bIsRunning = False
-
-    def onInput_onStop(self):
-        self.onUnload()]]>
-                                    </content>
-                                  </script>
-                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
-                                  <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
-                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
-                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
-                                  <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
-                                  <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="85" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
-                                  <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
-                                    <Choice value="disabled" />
-                                    <Choice value="random" />
-                                    <Choice value="contextual" />
-                                  </Parameter>
-                                  <Resource name="Speech" type="Lock" timeout="0" />
                                 </Box>
                                 <Box name="Animated Say Text (1)" id="6" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="761" y="265">
                                   <bitmap>media/images/box/interaction/say.png</bitmap>
@@ -2345,158 +2736,6 @@ class MyClass(GeneratedClass):
                                   </Parameter>
                                   <Resource name="Speech" type="Lock" timeout="0" />
                                 </Box>
-                                <Box name="NAOMark" id="1" localization="8" tooltip="Detect NAOMark and return its ID number." x="71" y="49">
-                                  <bitmap>media/images/box/interaction/uramark.png</bitmap>
-                                  <script language="4">
-                                    <content>
-                                      <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.bIsRunning = False
-
-    def onUnload(self):
-        self.bIsRunning = False
-
-    def onInput_onStart(self):
-        self.bIsRunning = True
-
-    def onInput_onStop(self):
-        if( self.bIsRunning ):
-            self.onUnload()
-            self.onStopped()]]>
-                                    </content>
-                                  </script>
-                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                  <Input name="LandmarkDetected" type="0" type_size="1" nature="4" stm_value_name="LandmarkDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
-                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
-                                  <Output name="onMarkDetected" type="2" type_size="1" nature="2" inner="0" tooltip="ID number of the detected NAOmark." id="6" />
-                                  <Output name="onNoMark" type="1" type_size="1" nature="2" inner="0" tooltip="No NAOmark has been detected." id="7" />
-                                  <Timeline enable="0">
-                                    <BehaviorLayer name="behavior_layer1">
-                                      <BehaviorKeyframe name="keyframe1" index="1">
-                                        <Diagram>
-                                          <Box name="Get Marks List" id="1" localization="8" tooltip="Extracts the list of detected marks (empty if no mark) from the naomarks detection&#x0A;extractor data." x="139" y="75">
-                                            <bitmap>media/images/box/box-script.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onUnload(self):
-        #puts code for box cleanup here
-        pass
-
-    def onInput_onStart(self, p):
-        markIDs = []
-        # Generic Extractor output format:
-        # p = [ [timeStampMaj, timeStampMin], [ tag0, tag1, ... tagN] ] with tag = [ shapeInfo, moreInfo ]
-        if(len(p) > 0):
-            markInfoArray = p[1]
-            for markInfo in markInfoArray:
-                moreInfo = markInfo[1]
-                # moreInfo = [ landmarkID ]
-                markIDs.append(moreInfo[0])
-        self.onStopped(markIDs)]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;LandmarkDetected extractor data." id="2" />
-                                            <Output name="onStopped" type="0" type_size="1" nature="1" inner="0" tooltip="Extracted list of detected marks." id="3" />
-                                          </Box>
-                                          <Box name="ProcessMarksList" id="2" localization="8" tooltip="Process the list of detected marks to give the ID number of the first detected mark&#x0A;and notify when there is no mark detected.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the first detected&#x0A;mark changes." x="293" y="84">
-                                            <bitmap>media/images/box/interaction/uramark.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.nNumLastDetected = -1
-
-    def onUnload(self):
-        #puts code for box cleanup here
-        pass
-
-    def onInput_onStart(self, p):
-        if(len(p) == 0):
-            self.nNumLastDetected = -1
-            self.onNoMark()
-        else:
-            if(self.nNumLastDetected != p[0]):
-                #only stimulate output if a mark wasn't detected before !
-                self.nNumLastDetected = p[0]
-                self.onMarkDetected( self.nNumLastDetected )]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="The detected NAOmarks list." id="2" />
-                                            <Output name="onMarkDetected" type="2" type_size="1" nature="1" inner="0" tooltip="Number of the detected NAOmark." id="3" />
-                                            <Output name="onNoMark" type="1" type_size="1" nature="1" inner="0" tooltip="No NAOmark is detected." id="4" />
-                                          </Box>
-                                          <Link inputowner="0" indexofinput="7" outputowner="2" indexofoutput="4" />
-                                          <Link inputowner="0" indexofinput="6" outputowner="2" indexofoutput="3" />
-                                          <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
-                                          <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
-                                        </Diagram>
-                                      </BehaviorKeyframe>
-                                    </BehaviorLayer>
-                                  </Timeline>
-                                </Box>
-                                <Box name="Switch Case" id="7" localization="8" tooltip="Test input value and stimulate the output matching to this value. If there is no&#x0A;matching output, the default output (onDefault) is stimulated.&#x0A;&#x0A;You can edit a case by left double-clicking on the line. You can add a&#x0A;case by right clicking on a line and selecting &apos;Insert a row&apos;. You can delete&#x0A;a case by right clicking on a line and selecting &apos;Remove a row&apos;." plugin="dispatcher_plugin" x="161" y="157">
-                                  <bitmap>media/images/box/interaction/choice.png</bitmap>
-                                  <script language="4">
-                                    <content>
-                                      <![CDATA[# /!\ Generated content. Do not edit!
-class MyClass(GeneratedClass):
-	def __init__(self):
-		try: # disable autoBind
-		  GeneratedClass.__init__(self, False)
-		except TypeError: # if NAOqi < 1.14
-		  GeneratedClass.__init__( self )
-
-	def onInput_onStart(self, p):
-		p = self.typeConversion(p)
-		if(p == self.typeConversion(64)):
-			self.output_1(p)
-		elif(p == self.typeConversion(68)):
-			self.output_2(p)
-		elif(p == self.typeConversion(80)):
-			self.output_3(p)
-		else:
-			self.onDefault()
-
-	def typeConversion(self, p):
-		try:
-			p = float(p)
-			pint = int(p)
-			if( p == pint ):
-				p = pint
-		except:
-			p = str(p)
-		return p]]>
-                                    </content>
-                                  </script>
-                                  <pluginContent>
-                                    <keywords>
-                                      <keyword>64</keyword>
-                                      <keyword>68</keyword>
-                                      <keyword>80</keyword>
-                                      <keyword></keyword>
-                                    </keywords>
-                                  </pluginContent>
-                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                  <Input name="onStart" type="0" type_size="1" nature="1" inner="0" tooltip="Value to test." id="2" />
-                                  <Output name="onDefault" type="1" type_size="1" nature="2" inner="0" tooltip="If the input value does not match any value set on the box." id="3" />
-                                  <Output name="output_1" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="4" />
-                                  <Output name="output_2" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="5" />
-                                  <Output name="output_3" type="0" type_size="1" nature="2" inner="0" tooltip="This IO has been automatically added by box. Read box tooltip for more information." id="6" />
-                                </Box>
                                 <Box name="História 3" id="9" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="403" y="492">
                                   <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
                                   <script language="4">
@@ -2507,12 +2746,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("História de Dona Lourdes:")]]>
+		self.onStopped("História de Dona Lourdes")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
                                     <text>
-                                      <![CDATA[História de Dona Lourdes:]]>
+                                      <![CDATA[História de Dona Lourdes]]>
                                     </text>
                                   </pluginContent>
                                   <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -2611,15 +2850,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Eu sou Dona Lourdes, tenho 65 anos e sempre cuidei da minha família e da casa. Trabalhei em serviços simples, mas nunca tive muito contato com computadores ou celulares modernos. Hoje, enfrento dificuldades por não saber usar bem a tecnologia. Tenho problemas para acessar aplicativos de banco, ler mensagens importantes e até para conversar com meus parentes que moram longe. Muitas vezes dependo dos meus filhos ou netos para resolver essas situações, e isso me deixa insegura e até envergonhada.\r\n\r\nPercebi que precisava decidir qual caminho seguir para melhorar minha vida e me adaptar ao mundo atual, qual caminho devo seguir?\r\n")]]>
+		self.onStopped("Sou Dona Lourdes, 65 anos. Após uma vida dedicada a casa e ao trabalho manual, a falta de contato com a tecnologia me criou dificuldades enormes não consigo usar aplicativos de banco, ler mensagens importantes e nem me comunicar com parentes distantes. Essa dependência dos filhos e netos me causa insegurança e vergonha. Preciso decidir urgentemente qual caminho seguir para me adaptar ao mundo atual e conquistar minha autonomia. Qual caminho devo seguir?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Eu sou Dona Lourdes, tenho 65 anos e sempre cuidei da minha família e da casa. Trabalhei em serviços simples, mas nunca tive muito contato com computadores ou celulares modernos. Hoje, enfrento dificuldades por não saber usar bem a tecnologia. Tenho problemas para acessar aplicativos de banco, ler mensagens importantes e até para conversar com meus parentes que moram longe. Muitas vezes dependo dos meus filhos ou netos para resolver essas situações, e isso me deixa insegura e até envergonhada.
-
-Percebi que precisava decidir qual caminho seguir para melhorar minha vida e me adaptar ao mundo atual, qual caminho devo seguir?
-]]>
+                                                <![CDATA[Sou Dona Lourdes, 65 anos. Após uma vida dedicada a casa e ao trabalho manual, a falta de contato com a tecnologia me criou dificuldades enormes não consigo usar aplicativos de banco, ler mensagens importantes e nem me comunicar com parentes distantes. Essa dependência dos filhos e netos me causa insegurança e vergonha. Preciso decidir urgentemente qual caminho seguir para me adaptar ao mundo atual e conquistar minha autonomia. Qual caminho devo seguir?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -2805,9 +3041,9 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion(80)):
+		if(p == self.typeConversion(112)):
 			self.output_1(p)
-		elif(p == self.typeConversion(84)):
+		elif(p == self.typeConversion(114)):
 			self.output_2(p)
 		else:
 			self.onDefault()
@@ -2825,8 +3061,8 @@ class MyClass(GeneratedClass):
                                             </script>
                                             <pluginContent>
                                               <keywords>
-                                                <keyword>80</keyword>
-                                                <keyword>84</keyword>
+                                                <keyword>112</keyword>
+                                                <keyword>114</keyword>
                                                 <keyword></keyword>
                                               </keywords>
                                             </pluginContent>
@@ -2846,14 +3082,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("No começo, achei que não precisava aprender, afinal, meus filhos e netos sempre estavam por perto para me ajudar. Mas logo percebi que isso trazia problemas. Certa vez, precisei marcar uma consulta médica pelo celular e não consegui. Em outro momento, recebi uma mensagem importante do banco e tive que esperar meu neto chegar para ler e responder. Isso me fez sentir limitada e sem autonomia.\r\n\r\nDiante dessas dificuldades, tive que refletir sobre o que fazer, qual escolha devo seguir?")]]>
+		self.onStopped("No início, eu me acomodei com a ajuda da família. Contudo, essa dependência logo gerou problemas sérios não consegui marcar uma consulta médica pelo celular e tive que esperar meu neto para ler uma mensagem urgente do banco. Esses momentos dolorosos me fizeram sentir limitada e sem autonomia. Essa situação me obriga a refletir e decidir preciso mudar e recuperar o controle sobre a minha própria vida. Qual escolha devo seguir")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[No começo, achei que não precisava aprender, afinal, meus filhos e netos sempre estavam por perto para me ajudar. Mas logo percebi que isso trazia problemas. Certa vez, precisei marcar uma consulta médica pelo celular e não consegui. Em outro momento, recebi uma mensagem importante do banco e tive que esperar meu neto chegar para ler e responder. Isso me fez sentir limitada e sem autonomia.
-
-Diante dessas dificuldades, tive que refletir sobre o que fazer, qual escolha devo seguir?]]>
+                                                <![CDATA[No início, eu me acomodei com a ajuda da família. Contudo, essa dependência logo gerou problemas sérios não consegui marcar uma consulta médica pelo celular e tive que esperar meu neto para ler uma mensagem urgente do banco. Esses momentos dolorosos me fizeram sentir limitada e sem autonomia. Essa situação me obriga a refletir e decidir preciso mudar e recuperar o controle sobre a minha própria vida. Qual escolha devo seguir]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -2870,14 +3104,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Dessa vez, tomei a decisão logo de início: fui atrás de oficinas para aprender tecnologia. Mesmo com receio, percebi que havia outros idosos com os mesmos desafios. Com apoio, aprendi a mexer no celular, conversar por vídeo com meus netos, entrar em grupos de amigas e até usar aplicativos de transporte e receitas.\r\n\r\nDiante dessa nova experiência, tive que refletir sobre minhas escolhas, qual opção devo seguir?")]]>
+		self.onStopped("Desta vez, agi rápido procurei oficinas para aprender tecnologia. O receio diminuiu ao ver outros idosos com os mesmos desafios. Com apoio, conquistei habilidades essenciais aprendi a usar o celular, fazer chamadas de vídeo com meus netos, participar de grupos de amigas e utilizar aplicativos de transporte e receitas. Diante dessa nova autonomia e inclusão, preciso refletir qual será o meu próximo passo?")]]>
                                               </content>
                                             </script>
                                             <pluginContent>
                                               <text>
-                                                <![CDATA[Dessa vez, tomei a decisão logo de início: fui atrás de oficinas para aprender tecnologia. Mesmo com receio, percebi que havia outros idosos com os mesmos desafios. Com apoio, aprendi a mexer no celular, conversar por vídeo com meus netos, entrar em grupos de amigas e até usar aplicativos de transporte e receitas.
-
-Diante dessa nova experiência, tive que refletir sobre minhas escolhas, qual opção devo seguir?]]>
+                                                <![CDATA[Desta vez, agi rápido procurei oficinas para aprender tecnologia. O receio diminuiu ao ver outros idosos com os mesmos desafios. Com apoio, conquistei habilidades essenciais aprendi a usar o celular, fazer chamadas de vídeo com meus netos, participar de grupos de amigas e utilizar aplicativos de transporte e receitas. Diante dessa nova autonomia e inclusão, preciso refletir qual será o meu próximo passo?]]>
                                               </text>
                                             </pluginContent>
                                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -3140,9 +3372,9 @@ class MyClass(GeneratedClass):
 
 	def onInput_onStart(self, p):
 		p = self.typeConversion(p)
-		if(p == self.typeConversion(85)):
+		if(p == self.typeConversion(112)):
 			self.output_1(p)
-		elif(p == self.typeConversion(107)):
+		elif(p == self.typeConversion(114)):
 			self.output_2(p)
 		else:
 			self.onDefault()
@@ -3160,8 +3392,8 @@ class MyClass(GeneratedClass):
                                                       </script>
                                                       <pluginContent>
                                                         <keywords>
-                                                          <keyword>85</keyword>
-                                                          <keyword>107</keyword>
+                                                          <keyword>112</keyword>
+                                                          <keyword>114</keyword>
                                                           <keyword></keyword>
                                                         </keywords>
                                                       </pluginContent>
@@ -3181,15 +3413,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Resolvia algumas situações, mas a sensação de incapacidade e frustração só aumentava. Eu me sentia cada vez mais “presa” e distante do mundo moderno.\r\nConclusão: Permanecer nesse caminho significou aceitar minhas limitações e continuar dependendo dos outros, o que me trouxe insegurança e a sensação de não acompanhar as mudanças do tempo.\r\n\r\nEssa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.")]]>
+		self.onStopped(" Embora tentasse resolver situações pontuais, a sensação de incapacidade e frustração aumentava, me deixando presa e distante do mundo moderno. Permanecer nesse caminho significou aceitar as limitações e a dependência, resultando em profunda insegurança e na dolorosa sensação de não acompanhar as mudanças do tempo.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[ Resolvia algumas situações, mas a sensação de incapacidade e frustração só aumentava. Eu me sentia cada vez mais “presa” e distante do mundo moderno.
-Conclusão: Permanecer nesse caminho significou aceitar minhas limitações e continuar dependendo dos outros, o que me trouxe insegurança e a sensação de não acompanhar as mudanças do tempo.
-
-Essa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.]]>
+                                                          <![CDATA[ Embora tentasse resolver situações pontuais, a sensação de incapacidade e frustração aumentava, me deixando presa e distante do mundo moderno. Permanecer nesse caminho significou aceitar as limitações e a dependência, resultando em profunda insegurança e na dolorosa sensação de não acompanhar as mudanças do tempo.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -3268,14 +3497,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Decidi mudar de atitude e me matriculei em uma oficina comunitária de inclusão digital. No começo, tive medo de não aprender, mas logo percebi que outras pessoas da minha idade também tinham as mesmas dificuldades. Com paciência e apoio dos professores, aprendi a usar o celular, mandar mensagens, fazer chamadas de vídeo e até pagar contas pelo aplicativo. Aos poucos, ganhei confiança, autonomia e descobri que nunca é tarde para aprender.\r\n\r\nEssa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.")]]>
+		self.onStopped("Mudei de atitude e me matriculei na oficina de inclusão digital. Superei o medo ao ver outros idosos com os mesmos desafios. Com paciência e apoio, aprendi a usar o celular, fazer videochamadas e pagar contas por aplicativo. Essa decisão transformou minha vida: ganhei confiança, autonomia e independência, provando que nunca é tarde para aprender e que a tecnologia é uma aliada para aproximar pessoas e facilitar o dia a dia.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[ Decidi mudar de atitude e me matriculei em uma oficina comunitária de inclusão digital. No começo, tive medo de não aprender, mas logo percebi que outras pessoas da minha idade também tinham as mesmas dificuldades. Com paciência e apoio dos professores, aprendi a usar o celular, mandar mensagens, fazer chamadas de vídeo e até pagar contas pelo aplicativo. Aos poucos, ganhei confiança, autonomia e descobri que nunca é tarde para aprender.
-
-Essa decisão transformou minha vida, me trouxe independência e mostrou que a tecnologia pode ser uma grande aliada para aproximar pessoas e facilitar o dia a dia.]]>
+                                                          <![CDATA[Mudei de atitude e me matriculei na oficina de inclusão digital. Superei o medo ao ver outros idosos com os mesmos desafios. Com paciência e apoio, aprendi a usar o celular, fazer videochamadas e pagar contas por aplicativo. Essa decisão transformou minha vida: ganhei confiança, autonomia e independência, provando que nunca é tarde para aprender e que a tecnologia é uma aliada para aproximar pessoas e facilitar o dia a dia.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -3530,14 +3757,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Optei por aprender só o essencial: chamadas, mensagens e operações simples no banco. Isso já me trouxe independência, sem que eu me sentisse sobrecarregada.\r\n\r\nEssa escolha me deu autonomia suficiente para resolver minhas necessidades diárias e me sentir mais segura, mesmo sem explorar todos os recursos disponíveis.")]]>
+		self.onStopped(" Optei por aprender apenas o essencial da tecnologia chamadas, mensagens e operações bancárias simples. Essa estratégia me deu independência imediata, sem me sobrecarregar. Essa escolha me trouxe autonomia suficiente para resolver minhas necessidades diárias e me sentir mais segura, mesmo sem dominar todos os recursos digitais.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[ Optei por aprender só o essencial: chamadas, mensagens e operações simples no banco. Isso já me trouxe independência, sem que eu me sentisse sobrecarregada.
-
-Essa escolha me deu autonomia suficiente para resolver minhas necessidades diárias e me sentir mais segura, mesmo sem explorar todos os recursos disponíveis.]]>
+                                                          <![CDATA[ Optei por aprender apenas o essencial da tecnologia chamadas, mensagens e operações bancárias simples. Essa estratégia me deu independência imediata, sem me sobrecarregar. Essa escolha me trouxe autonomia suficiente para resolver minhas necessidades diárias e me sentir mais segura, mesmo sem dominar todos os recursos digitais.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -3616,14 +3841,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped(" Decidi me aprofundar. Aprendi a usar redes sociais, assistir vídeos, pesquisar receitas e até participar de cursos online. Descobri um novo mundo de possibilidades que me trouxe alegria, diversão e maior conexão com minha família e amigos.\r\n\r\nEssa decisão ampliou meus horizontes, trouxe novas experiências e me mostrou que a idade não é barreira para aprender e se reinventar.")]]>
+		self.onStopped(" Decidi me aprofundar no mundo digital aprendi a usar redes sociais, assistir vídeos, pesquisar receitas e até fazer cursos online. Descobri um novo mundo de possibilidades que me trouxe alegria, diversão e uma conexão mais forte com a família e amigos. Essa decisão ampliou meus horizontes, trouxe novas experiências e me provou que a idade não é barreira para aprender e se reinventar.")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
                                                         <text>
-                                                          <![CDATA[ Decidi me aprofundar. Aprendi a usar redes sociais, assistir vídeos, pesquisar receitas e até participar de cursos online. Descobri um novo mundo de possibilidades que me trouxe alegria, diversão e maior conexão com minha família e amigos.
-
-Essa decisão ampliou meus horizontes, trouxe novas experiências e me mostrou que a idade não é barreira para aprender e se reinventar.]]>
+                                                          <![CDATA[ Decidi me aprofundar no mundo digital aprendi a usar redes sociais, assistir vídeos, pesquisar receitas e até fazer cursos online. Descobri um novo mundo de possibilidades que me trouxe alegria, diversão e uma conexão mais forte com a família e amigos. Essa decisão ampliou meus horizontes, trouxe novas experiências e me provou que a idade não é barreira para aprender e se reinventar.]]>
                                                         </text>
                                                       </pluginContent>
                                                       <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -3705,6 +3928,116 @@ class MyClass(GeneratedClass):
                                               </BehaviorLayer>
                                             </Timeline>
                                           </Box>
+                                          <Box name="olho história" id="11" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="197" y="387">
+                                            <bitmap>media/images/box/movement/move.png</bitmap>
+                                            <script language="4">
+                                              <content>
+                                                <![CDATA[]]>
+                                              </content>
+                                            </script>
+                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                            <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                            <Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1">
+                                              <BehaviorLayer name="behavior_layer1">
+                                                <BehaviorKeyframe name="keyframe1" index="1">
+                                                  <Diagram>
+                                                    <Box name="Eye LEDs" id="1" localization="8" tooltip="Set the LED color of the eyes. Note that you must open the box to enter the color." x="194" y="64">
+                                                      <bitmap>media/images/box/interaction/LED.png</bitmap>
+                                                      <script language="4">
+                                                        <content>
+                                                          <![CDATA[]]>
+                                                        </content>
+                                                      </script>
+                                                      <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                      <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                                      <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                                      <Parameter name="Side" inherits_from_parent="0" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the eye where the LED light is set." id="4">
+                                                        <Choice value="Both" />
+                                                        <Choice value="Left" />
+                                                        <Choice value="Right" />
+                                                      </Parameter>
+                                                      <Parameter name="Duration (s)" inherits_from_parent="0" content_type="2" value="1" default_value="0.1" min="0" max="5" tooltip="Transition&apos;s duration in seconds." id="5" />
+                                                      <Timeline enable="0">
+                                                        <BehaviorLayer name="behavior_layer1">
+                                                          <BehaviorKeyframe name="keyframe1" index="1">
+                                                            <Diagram>
+                                                              <Box name="Eyes LEDs" id="15" localization="8" tooltip="Set the color of LEDs of robot&apos;s eyes." x="281" y="41">
+                                                                <bitmap>media/images/box/interaction/LED.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.fadeOps = []
+        self.leds = self.session().service("ALLeds")
+
+    def onUnload(self):
+        #~ puts code for box cleanup here
+        pass
+
+    def onInput_color(self, p):
+        if( self.getParameter("Side") == "Left" ):
+            sGroup = "LeftFaceLeds"
+        elif( self.getParameter("Side") == "Right" ):
+            sGroup = "RightFaceLeds"
+        else:
+            sGroup = "FaceLeds"
+        fadeOp = self.leds.fadeRGB(sGroup, 256*256*p[0] + 256*p[1] + p[2], self.getParameter("Duration (s)"), _async=True)
+        self.fadeOps.append(fadeOp)
+        fadeOp.wait()
+        self.fadeOps.remove(fadeOp)
+        if( self.fadeOps == [] ):
+            self.onDone() # activate output of the box]]>
+                                                                  </content>
+                                                                </script>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="color" type="2" type_size="3" nature="2" inner="0" tooltip="Color of robot&apos;s eyes." id="2" />
+                                                                <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                                                <Parameter name="Side" inherits_from_parent="1" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the eye where the LED light is set." id="4">
+                                                                  <Choice value="Both" />
+                                                                  <Choice value="Left" />
+                                                                  <Choice value="Right" />
+                                                                </Parameter>
+                                                                <Parameter name="Duration (s)" inherits_from_parent="1" content_type="2" value="0.1" default_value="0.1" min="0" max="5" tooltip="Transition&apos;s duration in seconds." id="5" />
+                                                              </Box>
+                                                              <Box name="Color Edit" id="16" localization="8" tooltip="Transmit a table of number [R,G,B] correponsding to the selected color." plugin="coloredit_plugin" x="105" y="47">
+                                                                <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                                                                <script language="4">
+                                                                  <content>
+                                                                    <![CDATA[class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped([211, 0, 253])]]>
+                                                                  </content>
+                                                                </script>
+                                                                <pluginContent>
+                                                                  <color>#d300fd</color>
+                                                                </pluginContent>
+                                                                <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                                                <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="To send the color on the output." id="2" />
+                                                                <Output name="onStopped" type="2" type_size="3" nature="1" inner="0" tooltip="[R,G,B] with R, G and B between 0 and 255." id="3" />
+                                                              </Box>
+                                                              <Link inputowner="15" indexofinput="2" outputowner="16" indexofoutput="3" />
+                                                              <Link inputowner="16" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                                              <Link inputowner="0" indexofinput="3" outputowner="15" indexofoutput="3" />
+                                                            </Diagram>
+                                                          </BehaviorKeyframe>
+                                                        </BehaviorLayer>
+                                                      </Timeline>
+                                                    </Box>
+                                                    <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                                    <Link inputowner="0" indexofinput="4" outputowner="1" indexofoutput="3" />
+                                                  </Diagram>
+                                                </BehaviorKeyframe>
+                                              </BehaviorLayer>
+                                            </Timeline>
+                                          </Box>
                                           <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
                                           <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="4" />
                                           <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="6" />
@@ -3717,25 +4050,23 @@ class MyClass(GeneratedClass):
                                           <Link inputowner="0" indexofinput="4" outputowner="9" indexofoutput="4" />
                                           <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
                                           <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                          <Link inputowner="11" indexofinput="2" outputowner="0" indexofoutput="1" />
                                         </Diagram>
                                       </BehaviorKeyframe>
                                     </BehaviorLayer>
                                   </Timeline>
                                 </Box>
                                 <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="4" />
-                                <Link inputowner="0" indexofinput="4" outputowner="5" indexofoutput="4" />
                                 <Link inputowner="8" indexofinput="2" outputowner="2" indexofoutput="3" />
-                                <Link inputowner="6" indexofinput="2" outputowner="4" indexofoutput="3" />
                                 <Link inputowner="3" indexofinput="2" outputowner="8" indexofoutput="4" />
-                                <Link inputowner="5" indexofinput="2" outputowner="6" indexofoutput="4" />
                                 <Link inputowner="2" indexofinput="2" outputowner="7" indexofoutput="4" />
-                                <Link inputowner="4" indexofinput="2" outputowner="7" indexofoutput="5" />
-                                <Link inputowner="9" indexofinput="2" outputowner="7" indexofoutput="6" />
                                 <Link inputowner="7" indexofinput="2" outputowner="1" indexofoutput="6" />
                                 <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" />
+                                <Link inputowner="1" indexofinput="3" outputowner="1" indexofoutput="5" />
+                                <Link inputowner="6" indexofinput="2" outputowner="4" indexofoutput="3" />
+                                <Link inputowner="5" indexofinput="2" outputowner="6" indexofoutput="4" />
                                 <Link inputowner="10" indexofinput="2" outputowner="9" indexofoutput="3" />
                                 <Link inputowner="11" indexofinput="2" outputowner="10" indexofoutput="4" />
-                                <Link inputowner="0" indexofinput="4" outputowner="11" indexofoutput="4" />
                               </Diagram>
                             </BehaviorKeyframe>
                           </BehaviorLayer>
@@ -3751,13 +4082,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Escolha uma das histórias dos cards na mesa por favor\r\n")]]>
+		self.onStopped("Escolha uma das histórias.")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[Escolha uma das histórias dos cards na mesa por favor
-]]>
+                            <![CDATA[Escolha uma das histórias.]]>
                           </text>
                         </pluginContent>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
@@ -3929,8 +4259,8 @@ class MyClass(GeneratedClass):
                       <Link inputowner="8" indexofinput="2" outputowner="4" indexofoutput="3" />
                       <Link inputowner="3" indexofinput="2" outputowner="8" indexofoutput="4" />
                       <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="1" />
-                      <Link inputowner="4" indexofinput="2" outputowner="5" indexofoutput="8" />
-                      <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="7" />
+                      <Link inputowner="4" indexofinput="2" outputowner="5" indexofoutput="7" />
+                      <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="8" />
                     </Diagram>
                   </BehaviorKeyframe>
                 </BehaviorLayer>
@@ -4095,7 +4425,7 @@ class MyClass(GeneratedClass):
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                         <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
                         <Output name="onDone" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
-                        <Parameter name="Side" inherits_from_parent="0" content_type="3" value="Right" default_value="Both" custom_choice="0" tooltip="Choose the ear where the LED light is set." id="4">
+                        <Parameter name="Side" inherits_from_parent="0" content_type="3" value="Both" default_value="Both" custom_choice="0" tooltip="Choose the ear where the LED light is set." id="4">
                           <Choice value="Both" />
                           <Choice value="Left" />
                           <Choice value="Right" />
@@ -4146,86 +4476,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Stand Up" id="3" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="82" y="28">
-              <bitmap>media/images/box/movement/stand.png</bitmap>
-              <script language="4">
-                <content>
-                  <![CDATA[]]>
-                </content>
-              </script>
-              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-              <Output name="success" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated when the robot succeed in standing up." id="4" />
-              <Output name="failure" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when the robot failed to stand up after n tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." id="5" />
-              <Parameter name="Maximum of tries" inherits_from_parent="0" content_type="1" value="3" default_value="3" min="0" max="10" tooltip="The maximum number of fails of stand up before stimulating the failure output." id="6" />
-              <Timeline enable="0">
-                <BehaviorLayer name="StandUpBehavior">
-                  <BehaviorKeyframe name="DetectRobotPose" index="1">
-                    <Diagram>
-                      <Box name="Goto Posture" id="2" localization="8" tooltip="The robot goes from its current postition to the asked posture." x="331" y="92">
-                        <bitmap>media/images/box/box-diagram.png</bitmap>
-                        <script language="4">
-                          <content>
-                            <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.nTries = 0
-        self.postureService = self.session().service("ALRobotPosture")
-        pass
-
-    def onUnload(self):
-        self.postureService.stopMove()
-
-    def onInput_onStart(self):
-        if(self.nTries != self.getParameter("Maximum of tries")):
-            self.nTries = self.getParameter("Maximum of tries")
-            self.postureService.setMaxTryNumber(self.nTries)
-
-        result = self.postureService.goToPosture(self.getParameter("Name"), self.getParameter("Speed (%)")/100.)
-        if(result):
-            self.success()
-        else:
-            self.failure()
-        pass
-
-    def onInput_onStop(self):
-        self.onUnload() #~ it is recommanded to call onUnload of this box in a onStop method, as the code written in onUnload is used to stop the box as well
-        pass]]>
-                          </content>
-                        </script>
-                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                        <Output name="success" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated if the posture has been reached." id="4" />
-                        <Output name="failure" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated if the posture could not be reached." id="5" />
-                        <Parameter name="Name" inherits_from_parent="0" content_type="3" value="Stand" default_value="Stand" custom_choice="1" tooltip="Name of the posture to go to." id="6">
-                          <Choice value="Crouch" />
-                          <Choice value="LyingBack" />
-                          <Choice value="LyingBelly" />
-                          <Choice value="Sit" />
-                          <Choice value="SitRelax" />
-                          <Choice value="StandInit" />
-                          <Choice value="Stand" />
-                          <Choice value="StandZero" />
-                        </Parameter>
-                        <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="80" default_value="80" min="0" max="100" tooltip="Speed to go to the posture." id="7" />
-                        <Parameter name="Maximum of tries" inherits_from_parent="1" content_type="1" value="3" default_value="3" min="0" max="10" tooltip="The maximum number of fails of go to posture before stimulating the failure output." id="8" />
-                        <Resource name="All motors" type="Lock" timeout="0" />
-                        <Resource name="Stiffness" type="Lock" timeout="0" />
-                      </Box>
-                      <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
-                      <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
-                      <Link inputowner="0" indexofinput="5" outputowner="2" indexofoutput="5" />
-                    </Diagram>
-                  </BehaviorKeyframe>
-                </BehaviorLayer>
-              </Timeline>
-              <Resource name="All motors" type="Lock" timeout="0" />
-            </Box>
-            <Box name="Text Edit (1)" id="10" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="1004" y="72">
+            <Box name="Text Edit (1)" id="10" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="979" y="137">
               <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
               <script language="4">
                 <content>
@@ -4309,7 +4560,7 @@ class MyClass(GeneratedClass):
               </Parameter>
               <Resource name="Speech" type="Lock" timeout="0" />
             </Box>
-            <Box name="Tactile Head" id="6" localization="8" tooltip="Detect touch on head tactile sensor." x="732" y="593">
+            <Box name="Tactile Head" id="6" localization="8" tooltip="Detect touch on head tactile sensor." x="578" y="12">
               <bitmap>media/images/box/sensors/tactileHead.png</bitmap>
               <script language="4">
                 <content>
@@ -4452,18 +4703,97 @@ class MyClass(GeneratedClass):
               </Timeline>
               <Resource name="Head-sequence" type="Lock" timeout="0" />
             </Box>
+            <Box name="Stand Up" id="3" localization="8" tooltip="the robot tries to stand up from any position for a number of tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." x="132" y="69">
+              <bitmap>media/images/box/movement/stand.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="success" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated when the robot succeed in standing up." id="4" />
+              <Output name="failure" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when the robot failed to stand up after n tries.&#x0A;&#x0A;Note: The number of tries can be set in parameters." id="5" />
+              <Parameter name="Maximum of tries" inherits_from_parent="0" content_type="1" value="3" default_value="3" min="0" max="10" tooltip="The maximum number of fails of stand up before stimulating the failure output." id="6" />
+              <Timeline enable="0">
+                <BehaviorLayer name="StandUpBehavior">
+                  <BehaviorKeyframe name="DetectRobotPose" index="1">
+                    <Diagram>
+                      <Box name="Goto Posture" id="2" localization="8" tooltip="The robot goes from its current postition to the asked posture." x="331" y="92">
+                        <bitmap>media/images/box/box-diagram.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.nTries = 0
+        self.postureService = self.session().service("ALRobotPosture")
+        pass
+
+    def onUnload(self):
+        self.postureService.stopMove()
+
+    def onInput_onStart(self):
+        if(self.nTries != self.getParameter("Maximum of tries")):
+            self.nTries = self.getParameter("Maximum of tries")
+            self.postureService.setMaxTryNumber(self.nTries)
+
+        result = self.postureService.goToPosture(self.getParameter("Name"), self.getParameter("Speed (%)")/100.)
+        if(result):
+            self.success()
+        else:
+            self.failure()
+        pass
+
+    def onInput_onStop(self):
+        self.onUnload() #~ it is recommanded to call onUnload of this box in a onStop method, as the code written in onUnload is used to stop the box as well
+        pass]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                        <Output name="success" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated if the posture has been reached." id="4" />
+                        <Output name="failure" type="1" type_size="1" nature="1" inner="0" tooltip="Stimulated if the posture could not be reached." id="5" />
+                        <Parameter name="Name" inherits_from_parent="0" content_type="3" value="Stand" default_value="Stand" custom_choice="1" tooltip="Name of the posture to go to." id="6">
+                          <Choice value="Crouch" />
+                          <Choice value="LyingBack" />
+                          <Choice value="LyingBelly" />
+                          <Choice value="Sit" />
+                          <Choice value="SitRelax" />
+                          <Choice value="StandInit" />
+                          <Choice value="Stand" />
+                          <Choice value="StandZero" />
+                        </Parameter>
+                        <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="80" default_value="80" min="0" max="100" tooltip="Speed to go to the posture." id="7" />
+                        <Parameter name="Maximum of tries" inherits_from_parent="1" content_type="1" value="3" default_value="3" min="0" max="10" tooltip="The maximum number of fails of go to posture before stimulating the failure output." id="8" />
+                        <Resource name="All motors" type="Lock" timeout="0" />
+                        <Resource name="Stiffness" type="Lock" timeout="0" />
+                      </Box>
+                      <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
+                      <Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" />
+                      <Link inputowner="0" indexofinput="5" outputowner="2" indexofoutput="5" />
+                    </Diagram>
+                  </BehaviorKeyframe>
+                </BehaviorLayer>
+              </Timeline>
+              <Resource name="All motors" type="Lock" timeout="0" />
+            </Box>
             <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" />
             <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="4" />
             <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
-            <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="4" />
             <Link inputowner="10" indexofinput="2" outputowner="4" indexofoutput="4" />
             <Link inputowner="11" indexofinput="2" outputowner="10" indexofoutput="3" />
             <Link inputowner="0" indexofinput="4" outputowner="11" indexofoutput="4" />
-            <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="6" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="0" indexofinput="4" outputowner="6" indexofoutput="8" />
             <Link inputowner="0" indexofinput="4" outputowner="6" indexofoutput="9" />
             <Link inputowner="0" indexofinput="4" outputowner="6" indexofoutput="10" />
+            <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="4" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
