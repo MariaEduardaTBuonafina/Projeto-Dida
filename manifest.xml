@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="dida11-e82a56" installOnlyAtStartup="false" version="0.0.0">
+ <names>
+  <name lang="en_US">dida</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>pt_BR</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>pt_BR</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path=".">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">olho</name>
+   </names>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
